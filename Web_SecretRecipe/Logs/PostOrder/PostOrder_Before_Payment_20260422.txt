@@ -1,0 +1,89 @@
+====================================
+TxnRef : 2026_04_22_075439
+Time   : 2026-04-22 15:54:39
+------------------------------------
+<plist>
+  <array>
+    <master>
+      <org_id>E6C48AEC4FF44AA797ADB52EEA56704E</org_id>
+      <order_date>2026-04-22</order_date>
+      <customer_name>Bryan Chin</customer_name>
+      <address1>Bishan Street 111</address1>
+      <address2>Block 123</address2>
+      <postal_code>099302</postal_code>
+      <email>bryan.chin@solutiondetails.com.sg</email>
+      <phone_no>88789909</phone_no>
+      <cont_name>Bryan</cont_name>
+      <cont_lastname>Chin</cont_lastname>
+      <curr_code>SGD</curr_code>
+      <exch_rate>1.000000</exch_rate>
+      <total>88.11</total>
+      <absorb_tax>0.09</absorb_tax>
+      <disc_amt>0.00</disc_amt>
+      <tax_amt>5.21</tax_amt>
+      <payment_mode>null</payment_mode>
+      <payment_refenceno>null</payment_refenceno>
+      <payment_method>null</payment_method>
+      <scustomer_name>Bryan Chin</scustomer_name>
+      <saddress1>Bishan Street 111</saddress1>
+      <saddress2>Block 123</saddress2>
+      <spostal_code>099302</spostal_code>
+      <sphone_no>88789909</sphone_no>
+      <scont_name>Bryan</scont_name>
+      <scont_lastname>Chin</scont_lastname>
+      <delivery_lift_landing>N</delivery_lift_landing>
+      <delivery_lift_level_id></delivery_lift_level_id>
+      <remarks_one></remarks_one>
+      <remarks_two>Is Gift ? : No</remarks_two>
+      <payment_success>null</payment_success>
+    </master>
+    <deliverygroup>
+      <event_title>8A8B85A624D7495491F6339689A67929</event_title>
+      <del_grp_no>1</del_grp_no>
+      <menucatg_id>D2D3A405169C4719A4779DCA305322F3</menucatg_id>
+      <menupkg_id>8A8B85A624D7495491F6339689A67929</menupkg_id>
+      <no_of_pax>1</no_of_pax>
+      <total>1</total>
+      <unitprice>0</unitprice>
+      <event_date>2026-04-30</event_date>
+      <eventtime_id>2E174DA978D54DBCAD99C963AC271D08</eventtime_id>
+      <hascollection>N</hascollection>
+      <collection_date></collection_date>
+      <collectiontime_id></collectiontime_id>
+      <haspickup>N</haspickup>
+      <pickup_location></pickup_location>
+      <remarks></remarks>
+      <isgift>No</isgift>
+      <cakesampleimage></cakesampleimage>
+      <no_deliverycharge>N</no_deliverycharge>
+    </deliverygroup>
+    <details>
+      <org_id>E6C48AEC4FF44AA797ADB52EEA56704E</org_id>
+      <del_grp_no>1</del_grp_no>
+      <line_no>1</line_no>
+      <product_id>1EF70F48C5E5432688B8CF41B5233655</product_id>
+      <product_desc>Chocolate Banana</product_desc>
+      <product_type>REGULAR</product_type>
+      <group_name>Chocolate Banana</group_name>
+      <qty_order>1</qty_order>
+      <uom_id>67DA6F76682241E4A0C81AB214272926</uom_id>
+      <unit_price>57.90</unit_price>
+      <remarks></remarks>
+      <cakewriting></cakewriting>
+    </details>
+    <details>
+      <org_id>E6C48AEC4FF44AA797ADB52EEA56704E</org_id>
+      <del_grp_no>1</del_grp_no>
+      <line_no>2</line_no>
+      <product_id>DD5D958A73394A42AB55E7485ADAE6AD</product_id>
+      <product_desc>Specific Area Charges</product_desc>
+      <group_name>Delivery Charge</group_name>
+      <qty_order>1</qty_order>
+      <uom_id>100</uom_id>
+      <unit_price>25.00</unit_price>
+      <remarks></remarks>
+      <isdcharge>Y</isdcharge>
+    </details>
+  </array>
+</plist>
+

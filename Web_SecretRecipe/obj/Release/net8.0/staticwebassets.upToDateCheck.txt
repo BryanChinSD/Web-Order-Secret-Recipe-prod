@@ -1,0 +1,263 @@
+wwwroot\css\AboutUs.css
+wwwroot\css\AboutUs1.css
+wwwroot\css\account.css
+wwwroot\css\animate.css
+wwwroot\css\base.css
+wwwroot\css\Blog.css
+wwwroot\css\Cafemenu.css
+wwwroot\css\Cakecategories.css
+wwwroot\css\CakeInfo.css
+wwwroot\css\Cakes.css
+wwwroot\css\callback.css
+wwwroot\css\Cart.css
+wwwroot\css\CartNotification.css
+wwwroot\css\Checkout.css
+wwwroot\css\dropdown.css
+wwwroot\css\Easystore.css
+wwwroot\css\Feedback.css
+wwwroot\css\footer.css
+wwwroot\css\Header.css
+wwwroot\css\Join.css
+wwwroot\css\mainpage.css
+wwwroot\css\Menupack.css
+wwwroot\css\MyProfile.css
+wwwroot\css\Outlets.css
+wwwroot\css\Payment.css
+wwwroot\css\Profile.css
+wwwroot\css\promotion.css
+wwwroot\css\Reward.css
+wwwroot\css\Shop.css
+wwwroot\css\site.css
+wwwroot\css\test.css
+wwwroot\css\Whatsnew.css
+wwwroot\favicon.ico
+wwwroot\img\1-for-1.jpg
+wwwroot\img\1-for-1.png
+wwwroot\img\1122.jpg
+wwwroot\img\15436387.jpg
+wwwroot\img\15436387.webp
+wwwroot\img\1998.jpg
+wwwroot\img\2022.jpg
+wwwroot\img\6pc_beef_meatballs.jpg
+wwwroot\img\6pc_chicken_meatballs.jpg
+wwwroot\img\AsianClassic\ah ma chicken soup.jpg
+wwwroot\img\AsianClassic\Beef Rendang.jpg
+wwwroot\img\AsianClassic\Curry Mee.jpg
+wwwroot\img\AsianClassic\Gourmet Seafood Laksa.jpg
+wwwroot\img\AsianClassic\Ipoh hor Fun.jpg
+wwwroot\img\AsianClassic\Nasi Goreng Ayam Rangup.jpg
+wwwroot\img\AsianClassic\Nasi Goreng Cili Api.jpg
+wwwroot\img\AsianClassic\Noodle in Tom Yum Kung.jpg
+wwwroot\img\AsianClassic\Noodle in Tom Yum Soup.jpg
+wwwroot\img\AsianClassic\Penang Assam Laksa.jpg
+wwwroot\img\AsianClassic\Secret Recipe Fried Rice with Satay.jpg
+wwwroot\img\AsianClassic\Special Beef Noodle.jpg
+wwwroot\img\AsianClassic\Special Seafood Mee Mamak.jpg
+wwwroot\img\AsianClassic\Thai Style Fried Rice.jpg
+wwwroot\img\AsianClassic\Vegetarian Fried Rice with Satay.jpg
+wwwroot\img\AsianClassic\Vietnamese Beef Noodle Soup.jpg
+wwwroot\img\BakedRice\creamy_chicken_baked_rice.jpg
+wwwroot\img\BakedRice\Seafood_Baked_Rice.jpg
+wwwroot\img\black_forest.png
+wwwroot\img\blog-cake.webp
+wwwroot\img\blog-cake1.webp
+wwwroot\img\blog-cake3.jpg
+wwwroot\img\branch.jpg
+wwwroot\img\Cafe_Menu_Slider.png
+wwwroot\img\Cake categories\brownies.jpg
+wwwroot\img\Cake categories\cheese cakes.jpg
+wwwroot\img\Cake categories\cream cakes.jpg
+wwwroot\img\Cake categories\mini cakes.jpg
+wwwroot\img\Cake categories\platinum cakes.jpg
+wwwroot\img\Cake categories\signature cakes.jpg
+wwwroot\img\cake-counter.png
+wwwroot\img\cake-halal.png
+wwwroot\img\cake-page-header-1920x350.png
+wwwroot\img\cake-sharing.png
+wwwroot\img\celebrate.webp
+wwwroot\img\Cheese Cakes 2.webp
+wwwroot\img\Cheese Cakes.webp
+wwwroot\img\Chicken Seafood Wonton.jpg
+wwwroot\img\Chicken\buttermilk chicken.jpg
+wwwroot\img\Chicken\Chicken Corden Bleu.jpg
+wwwroot\img\Chicken\Chicken Parmigiana.jpg
+wwwroot\img\Chicken\Country Fried Chicken.jpg
+wwwroot\img\Chicken\Golden Crispy Chicken.jpg
+wwwroot\img\Chicken\Grilled Black Pepper Chicken.jpg
+wwwroot\img\Chicken\Grilled Chicken Leg with Creamy Mushroom Sauce.jpg
+wwwroot\img\Chicken\Grilled Mexican Chicken.jpg
+wwwroot\img\Chicken\Grilled Mushroom Chicken.jpg
+wwwroot\img\Chicken\Hainanese Chicken Chop.jpg
+wwwroot\img\Chicken_Satay.jpg
+wwwroot\img\Chicken_Satay.png
+wwwroot\img\chocolate indulgence.webp
+wwwroot\img\cooler-bag.jpg
+wwwroot\img\cooler-bag.png
+wwwroot\img\Cooler.jpeg
+wwwroot\img\DessertsIceCream\banana split.jpg
+wwwroot\img\DessertsIceCream\Chocolate Fudge.jpg
+wwwroot\img\DessertsIceCream\chocolate sundae.jpg
+wwwroot\img\DessertsIceCream\double delight.jpg
+wwwroot\img\DessertsIceCream\Fruitilicious.jpg
+wwwroot\img\DessertsIceCream\Hokkaido Triple Chocolate Cheese.jpg
+wwwroot\img\DessertsIceCream\Lava Cake.jpg
+wwwroot\img\DessertsIceCream\ShinjukuBake\Chocolate Fudge.jpg
+wwwroot\img\DessertsIceCream\ShinjukuBake\Shinjuku Caramel Bake.jpg
+wwwroot\img\DessertsIceCream\ShinjukuBake\Shinjuku Chocolate Bake.jpg
+wwwroot\img\DessertsIceCream\ShinjukuBake\Shinjuku Maple Bake.jpg
+wwwroot\img\DessertsIceCream\Single Chocolate.jpg
+wwwroot\img\DessertsIceCream\Single strawberry.jpg
+wwwroot\img\DessertsIceCream\Single Vanilla.jpg
+wwwroot\img\double_delight.png
+wwwroot\img\first_outlet.jpg
+wwwroot\img\Frame 1000004914.png
+wwwroot\img\gift.svg
+wwwroot\img\Golden_Crispy_Chicken.png
+wwwroot\img\Gourmet_Seafood_Laksa.png
+wwwroot\img\Grilled_Mushroom_Chicken.png
+wwwroot\img\halal.png
+wwwroot\img\hokkaido triple chocolate cheese 1.webp
+wwwroot\img\hokkaido triple chocolate cheese.webp
+wwwroot\img\Icon.svg
+wwwroot\img\join-us-staff-image.png
+wwwroot\img\JoinOurTeam.png
+wwwroot\img\Kids Club\Kid_s Fish & Chips.jpg
+wwwroot\img\Kids Club\Kid_s Penne & Cheese.jpg
+wwwroot\img\Kids Club\Kid’s Meatballs (beef_chicken).jpg
+wwwroot\img\logo-no-spacing.png
+wwwroot\img\lunch-picks.jpg
+wwwroot\img\LunchSpecial.jpg
+wwwroot\img\mini-royal.webp
+wwwroot\img\OurStaff.jpg
+wwwroot\img\outlet.png
+wwwroot\img\Pasta\Beef Carbonara.png
+wwwroot\img\Pasta\Lasagne.png
+wwwroot\img\Pasta\Mediterranean Spaghetti.png
+wwwroot\img\Pasta\Prawn Arrabiata.png
+wwwroot\img\Pasta\Prawn Penne with Cheese.png
+wwwroot\img\Pasta\seafood aglio olio.png
+wwwroot\img\Pasta\spaghetti bolognese.png
+wwwroot\img\Pasta\Spaghetti Marinara.png
+wwwroot\img\Pasta\Spaghetti Meatballs.png
+wwwroot\img\Pasta\Spicy Seafood Medley Pasta.png
+wwwroot\img\Pasta\Spicy Turkey Carbonara.png
+wwwroot\img\Pasta\Thai Seafood Spaghetti.png
+wwwroot\img\Pasta\Vegetarian Aglio Olio.png
+wwwroot\img\Pastries & Pies\Beef Pie.jpg
+wwwroot\img\Pastries & Pies\Original Chicken Cornish.jpg
+wwwroot\img\Pastries & Pies\Spicy Chicken Cornish.jpg
+wwwroot\img\Price-tag.png
+wwwroot\img\SaladSoup\Caesar_Salad.jpg
+wwwroot\img\SaladSoup\Crispy_Chicken_Salad.jpg
+wwwroot\img\SaladSoup\Lobster_Bisque.jpg
+wwwroot\img\SaladSoup\Mushroom_Soup.jpg
+wwwroot\img\SaladSoup\Pumpkin_Soup.jpg
+wwwroot\img\SaladSoup\Seafood_Bisque.jpg
+wwwroot\img\Satay.png
+wwwroot\img\Seafood_Spring_Roll.png
+wwwroot\img\secret-recipe-logo-white.png
+wwwroot\img\Secret-Recipe.png
+wwwroot\img\shipping.svg
+wwwroot\img\Sides\Bun.jpg
+wwwroot\img\Sides\Butter_Rice.jpg
+wwwroot\img\Sides\French_Fries.jpg
+wwwroot\img\Sides\Mashed_Potatoes.jpg
+wwwroot\img\Sides\Potato_Wedges.jpg
+wwwroot\img\Sides\sweet_potato_fries.jpg
+wwwroot\img\Sides\Wholemeal_Garlic_Bread.jpg
+wwwroot\img\slider3_img.png
+wwwroot\img\slider_1[1].jpg
+wwwroot\img\slider_2.jpg
+wwwroot\img\slider_3.png
+wwwroot\img\slider_img.png
+wwwroot\img\SOC CI UKAS-H-FSSC 22000-RGB.jpg
+wwwroot\img\solution-details.png
+wwwroot\img\Spaghetti.png
+wwwroot\img\Spaghetti_Meatballs.png
+wwwroot\img\SR-PSG.png
+wwwroot\img\SR-TPY.png
+wwwroot\img\SR.png
+wwwroot\img\SR_1.png
+wwwroot\img\SR_Coffee.png
+wwwroot\img\SR_Coffee1.png
+wwwroot\img\SR_Coffee2.png
+wwwroot\img\SR_Coffee3.png
+wwwroot\img\SR_Coffee4.png
+wwwroot\img\SR_Coffee5.png
+wwwroot\img\SR_LOGO.png
+wwwroot\img\SR_LOGO_Web.webp
+wwwroot\img\SR_Orchard.jpg
+wwwroot\img\SR_SG.jpg
+wwwroot\img\Thai_Style_Chicken_Wings.jpg
+wwwroot\img\vegetarian_satay.jpg
+wwwroot\img\verified.svg
+wwwroot\img\website-slider-3.jpg
+wwwroot\img\Western\Beef Cheek.jpg
+wwwroot\img\Western\Black Pepper Lamb Shank.jpg
+wwwroot\img\Western\Carribean Style Fish Fillet.jpg
+wwwroot\img\Western\Fish & Chips.jpg
+wwwroot\img\Western\Irish Lamb Shank.jpg
+wwwroot\img\Western\Mozzarella Baked Fish.jpg
+wwwroot\img\Western\Pan Grilled Catch of the Day.jpg
+wwwroot\js\Checkout-BK.js
+wwwroot\js\Checkout.js
+wwwroot\js\SecretRecipe.js
+wwwroot\js\SecretRecipe_BK.js
+wwwroot\js\site.js
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\LICENSE.txt

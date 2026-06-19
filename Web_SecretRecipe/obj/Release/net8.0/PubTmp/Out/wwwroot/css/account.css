@@ -1,0 +1,303 @@
+﻿@media screen and (min-width: 990px) {
+    : is(.account, .order) > div:nth-of-type(2) > div:first-of-type + div {
+        min-width: 350px;
+        max-width: 380px;
+    }
+
+    .order-grid .grid__item:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .section-wrapper {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+        .section-wrapper > div {
+            width: 100%;
+        }
+}
+
+.small-text {
+    font-size: 85%;
+}
+
+.complete-form {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 749px) {
+    .complete-form {
+        margin-top: 0;
+    }
+
+    .order-grid.grid--1-col .grid__item {
+        width: 90%;
+    }
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.customer .heading-nav_link {
+    display: inline-flex;
+    align-items: center;
+}
+
+    .customer .heading-nav_link + .heading-nav_link {
+        margin-left: 15px;
+    }
+
+.card-image {
+    margin-bottom: 15px;
+}
+
+    .card-image img {
+        width: 100%;
+        aspect-ratio: 5/3;
+        object-fit: cover;
+        background-color: white;
+        box-shadow: 0 0 5px 1px rgba(18, 18, 18, 0.05);
+        border-radius: 10px;
+    }
+
+.member-card-wrapper {
+    max-width: 400px;
+    margin: auto;
+}
+
+.member-card {
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    line-height: 1.2;
+    box-shadow: 0 0 5px 1px rgba(18, 18, 18, 0.05);
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.member-card_title {
+    font-size: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 220px;
+    display: inline-block;
+    line-height: 1;
+}
+
+.card-type_simple {
+    background-color: #323131;
+    color: #fff;
+    background-color:;
+    color:;
+}
+
+    .card-type_simple * {
+        color: #fff;
+        color:;
+    }
+
+.card-type_customize {
+    background-image: url('');
+}
+
+    .card-type_customize .qr-modal-toggle {
+        background: #fff;
+        color: #000;
+        padding: 2px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px 1px rgba(18, 18, 18, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.member-card_detail {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+    .member-card_detail:first-child {
+        top: 20px;
+    }
+
+    .member-card_detail:last-child {
+        bottom: 20px;
+        column-gap: 5px;
+    }
+
+.membership-upgrade-progress {
+    border-radius: 5px;
+    overflow: hidden;
+    height: 8px;
+    width: 100%;
+    background-color: rgb(var(--color-foreground), 0.1);
+}
+
+.membership-progress {
+    width: 0;
+    height: 10px;
+    display: block !important;
+    background-color: rgb(var(--color-foreground));
+    transition: width 0.5s ease-in-out;
+}
+
+.credit-point-wrapper .svg-icon {
+    margin-right: 0;
+}
+
+
+#modal-box-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+.modal-box-wrapper {
+    position: relative;
+}
+
+    .modal-box-wrapper .modal-box {
+        display: block;
+    }
+
+.modal-box {
+    color: #000;
+    background-color: #F8F9FA;
+    border-color: rgba(18, 18, 18, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    padding: 25px 35px;
+    position: fixed;
+    top: 10vh;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    visibility: hidden;
+    width: 100%;
+    z-index: -1;
+    display: none;
+    opacity: 0;
+}
+
+    .modal-box p {
+        color: #000;
+    }
+
+@media screen and (min-width: 750px) {
+    .modal-box {
+        max-width: 480px;
+    }
+}
+
+.modal-box.animate {
+    transition: transform var(--duration-short) ease, visibility 0s var(--duration-short) ease;
+}
+
+.modal-box.active {
+    transform: translate(-50%, 0);
+    transition: transform var(--duration-default) ease, visibility 0s;
+    visibility: visible;
+    z-index: 10000;
+    opacity: 1;
+}
+
+#modal-box-backdrop.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2001;
+    display: block;
+    opacity: 1;
+    transition: opacity var(--duration-default) ease, visibility 0s;
+}
+
+.modal-box__header {
+    align-items: flex-start;
+    display: flex;
+}
+
+.modal-box__heading {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.modal-box__close {
+    margin-top: -8px;
+    margin-right: -15px;
+}
+
+.modal__close-button.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    height: 4.4rem;
+    width: 4.4rem;
+    background-color: transparent;
+}
+
+.qr-close-style {
+    background: #F3F5F9 !important;
+    color: black !important;
+    padding: 0 !important;
+    min-height: 3rem !important;
+    box-shadow: none !important;
+    min-width: 3rem !important;
+    margin-top: 0 !important;
+    border: transparent !important;
+    margin-bottom: 15px !important;
+    margin-right: 0px !important;
+    border-radius: 50% !important;
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.modal-qrcode {
+    max-width: 180px !important;
+}
+
+.modal-center {
+    text-align: center !important;
+}
+
+.modal__close-button .icon {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+a svg.icon-tabler-qrcode {
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    min-width: 30px;
+    min-height: 30px;
+    fill: none;
+}

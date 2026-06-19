@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Submission</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f4;">
+    <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; padding: 20px;">
+        <tr>
+            <td align="center">
+                <!-- Main Container -->
+                <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+
+                    <!-- Header -->
+                    <tr>
+                        <td style="background: linear-gradient(135deg, #DA2128 0%, #c41e24 100%); padding: 30px; text-align: center; ">
+                            <h1 style="color: white; margin: 0; font-size: 28px; font-weight: 600;">
+                                📋 New Feedback Received
+                            </h1>
+                        </td>
+                    </tr>
+
+                    <!-- Body Content -->
+                    <tr>
+                        <td style="padding: 40px 30px;">
+
+                            <!-- Greeting -->
+                            <p style="color: #333333; font-size: 16px; line-height: 1.6; margin: 0 0 25px 0;">
+                                Hello Team,
+                            </p>
+                            <p style="color: #666666; font-size: 15px; line-height: 1.6; margin: 0 0 30px 0;">
+                                You have received a new feedback submission from your website. Please find the details below:
+                            </p>
+
+                            <!-- Feedback Details Card -->
+                            <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f8f9fa; border-radius: 6px; margin-bottom: 25px;">
+                                <tr>
+                                    <td style="padding: 25px;">
+
+                                        <!-- Subject -->
+                                        <div style="margin-bottom: 20px;">
+                                            <div style="color: #DA2128; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 5px;">
+                                                SUBJECT
+                                            </div>
+                                            <div style="color: #333333; font-size: 18px; font-weight: 600;">
+                                                {SUBJECT}
+                                            </div>
+                                        </div>
+
+                                        <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 20px 0;">
+
+                                        <!-- Customer Details -->
+                                        <table width="100%" cellpadding="8" cellspacing="0">
+                                            <tr>
+                                                <td width="30%" style="color: #666666; font-size: 14px; vertical-align: top;">
+                                                    <strong>👤 Name:</strong>
+                                                </td>
+                                                <td style="color: #333333; font-size: 14px;">
+                                                    {NAME}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color: #666666; font-size: 14px; vertical-align: top;">
+                                                    <strong>📧 Email:</strong>
+                                                </td>
+                                                <td style="color: #333333; font-size: 14px;">
+                                                    <a href="mailto:{EMAIL}" style="color: #DA2128; text-decoration: none;">
+                                                        {EMAIL}
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color: #666666; font-size: 14px; vertical-align: top;">
+                                                    <strong>📱 Phone:</strong>
+                                                </td>
+                                                <td style="color: #333333; font-size: 14px;">
+                                                    {PHONE}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color: #666666; font-size: 14px; vertical-align: top;">
+                                                    <strong>📅 Submitted:</strong>
+                                                </td>
+                                                <td style="color: #333333; font-size: 14px;">
+                                                    {DATE_TIME}
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Message Section -->
+                            <div style="margin-bottom: 25px;">
+                                <div style="color: #DA2128; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px;">
+                                    💬 MESSAGE
+                                </div>
+                                <div style="background-color: #ffffff; border-left: 4px solid #DA2128; padding: 20px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                                    <p style="color: #333333; font-size: 15px; line-height: 1.8; margin: 0; white-space: pre-wrap;">
+                                        {MESSAGE}
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Attachment Section (if applicable) -->
+                            <div style="background-color: #fff8e1; border-radius: 6px; padding: 15px; margin-bottom: 25px;">
+                                <p style="margin: 0; color: #856404; font-size: 14px;">
+                                    📎 <strong>Attachment:</strong> {ATTACHMENT_INFO}
+                                </p>
+                            </div>
+
+                            <!-- Action Button -->
+                            <table width="100%" cellpadding="0" cellspacing="0" style="margin-top: 30px;">
+                                <tr>
+                                    <td align="center">
+                                        <a href="mailto:{EMAIL}?subject=Re: {SUBJECT}"
+                                           style="display: inline-block; background-color: #DA2128; color: #ffffff; text-decoration: none; padding: 14px 35px; border-radius: 6px; font-size: 15px; font-weight: 600; box-shadow: 0 2px 6px rgba(218, 33, 40, 0.3);">
+                                            Reply to Customer
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="background-color: #f8f9fa; padding: 25px 30px; text-align: center; border-top: 1px solid #e0e0e0;">
+                            <p style="color: #999999; font-size: 13px; margin: 0 0 10px 0;">
+                                This is an automated message from your website feedback form.
+                            </p>
+                            <p style="color: #999999; font-size: 12px; margin: 0;">
+                                © {YEAR} Secret Recipe. All rights reserved.
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

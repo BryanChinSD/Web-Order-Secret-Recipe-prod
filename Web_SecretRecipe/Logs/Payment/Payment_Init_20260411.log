@@ -1,0 +1,4680 @@
+========================================
+Time     : 2026-04-11 11:21:17
+Endpoint : PaymentGenerateTxnReq
+Stage    : REQUEST
+Payload  :
+{"txnAmount":79.46,"merchantTxnRef":"2026_04_11_032117"}
+
+========================================
+Time     : 2026-04-11 11:21:18
+Endpoint : PaymentGenerateTxnReq
+Stage    : RESPONSE
+Payload  :
+{"ss":"1","msg":{"netsMid":"UMID_877772003","submissionMode":"B","txnAmount":"7946","merchantTxnRef":"2026_04_11_032117","merchantTxnDtm":"20260411 11:21:17.990","paymentType":"SALE","currencyCode":"SGD","netsTxnRef":"20260411112118190","netsTxnDtm":"20260411 11:21:18.989","merchantTimeZone":"+8:00","b2sTxnEndURL":"https://weborder.erp.evolut.com.sg/SR/Return","s2sTxnEndURL":"https://weborder.erp.evolut.com.sg/SR/Callback","clientType":"W","netsTxnStatus":"5","netsTxnMsg":"OK","stageRespCode":"1001-00000","merchantSvcList":["DD","CC_SGD","APS_SGD_DBS_PAYLAH","APS_SGD_NETSPAY","APS_SGD_OCBC_PAYANYONE","APS_SGD_UOB_MIGHTY"],"txnRand":"74382747328668788","merchantGrpName":"STYL SOLUTIONS - SOAPI3","paymtSvcInfoList":[{"paymtSvcId":"DD","netsMid":"877772001","tsReqFlag":null},{"paymtSvcId":"CC_SGD","netsMid":"877772007","tsReqFlag":null},{"paymtSvcId":"APS_SGD_DBS_PAYLAH","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_NETSPAY","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_OCBC_PAYANYONE","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_UOB_MIGHTY","netsMid":"877772013","tsReqFlag":null}],"language":"en","rsaModulus":"e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1","rsaExponent":"ca17","ss":"1","apiKey":"154eb31c-0f72-45bb-9249-84a1036fd1ca","actionCode":"0","msgActionCode":"tx01.02"}}
+
+========================================
+Time     : 2026-04-11 11:21:18
+Endpoint : PrepareOnePager
+Stage    : REQUEST
+Payload  :
+{"netsMid":"UMID_877772003","submissionMode":"B","txnAmount":"7946","merchantTxnRef":"2026_04_11_032117","merchantTxnDtm":"20260411 11:21:17.990","netsMidIndicator":null,"paymentType":"SALE","currencyCode":"SGD","netsTxnRef":"20260411112118190","netsTxnDtm":"20260411 11:21:18.989","merchantTimeZone":"+8:00","b2sTxnEndURL":"https://weborder.erp.evolut.com.sg/SR/Return","s2sTxnEndURL":"https://weborder.erp.evolut.com.sg/SR/Callback","clientType":"W","netsTxnStatus":"5","netsTxnMsg":"OK","stageRespCode":"1001-00000","merchantSvcList":["DD","CC_SGD","APS_SGD_DBS_PAYLAH","APS_SGD_NETSPAY","APS_SGD_OCBC_PAYANYONE","APS_SGD_UOB_MIGHTY"],"paymtSvcInfoList":[{"paymtSvcId":"DD","netsMid":"877772001","tsReqFlag":null},{"paymtSvcId":"CC_SGD","netsMid":"877772007","tsReqFlag":null},{"paymtSvcId":"APS_SGD_DBS_PAYLAH","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_NETSPAY","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_OCBC_PAYANYONE","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_UOB_MIGHTY","netsMid":"877772013","tsReqFlag":null}],"txnRand":"74382747328668788","merchantGrpName":"STYL SOLUTIONS - SOAPI3","language":"en","rsaModulus":"e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1","rsaExponent":"ca17","ss":"1","apiKey":"154eb31c-0f72-45bb-9249-84a1036fd1ca","actionCode":"0","msgActionCode":"tx01.02"}
+
+========================================
+Time     : 2026-04-11 11:21:18
+Endpoint : PrepareOnePager
+Stage    : OUTGOING_GENERATE_OPTION
+Payload  :
+{
+  "netsMid": "UMID_877772003",
+  "submissionMode": "B",
+  "txnAmount": "7946",
+  "merchantTxnRef": "2026_04_11_032117",
+  "merchantTxnDtm": "20260411 11:21:17.990",
+  "netsMidIndicator": null,
+  "paymentType": "SALE",
+  "currencyCode": "SGD",
+  "netsTxnRef": "20260411112118190",
+  "netsTxnDtm": "20260411 11:21:18.989",
+  "merchantTimeZone": "+8:00",
+  "b2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Return",
+  "s2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Callback",
+  "clientType": "W",
+  "netsTxnStatus": "5",
+  "netsTxnMsg": "OK",
+  "stageRespCode": "1001-00000",
+  "merchantSvcList": [
+    "DD",
+    "CC_SGD",
+    "APS_SGD_DBS_PAYLAH",
+    "APS_SGD_NETSPAY",
+    "APS_SGD_OCBC_PAYANYONE",
+    "APS_SGD_UOB_MIGHTY"
+  ],
+  "paymtSvcInfoList": [
+    {
+      "paymtSvcId": "DD",
+      "netsMid": "877772001",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "CC_SGD",
+      "netsMid": "877772007",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_DBS_PAYLAH",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_NETSPAY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_OCBC_PAYANYONE",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_UOB_MIGHTY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    }
+  ],
+  "txnRand": "74382747328668788",
+  "merchantGrpName": "STYL SOLUTIONS - SOAPI3",
+  "language": "en",
+  "rsaModulus": "e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1",
+  "rsaExponent": "ca17",
+  "ss": "1",
+  "apiKey": "154eb31c-0f72-45bb-9249-84a1036fd1ca",
+  "actionCode": "0",
+  "msgActionCode": "tx01.02"
+}
+
+========================================
+Time     : 2026-04-11 11:21:18
+Endpoint : GeneratePaymentOption
+Stage    : OUTGOING_REQUEST
+Payload  :
+{
+  "netsMid": "UMID_877772003",
+  "submissionMode": "B",
+  "txnAmount": "7946",
+  "merchantTxnRef": "2026_04_11_032117",
+  "merchantTxnDtm": "20260411 11:21:17.990",
+  "netsMidIndicator": null,
+  "paymentType": "SALE",
+  "currencyCode": "SGD",
+  "netsTxnRef": "20260411112118190",
+  "netsTxnDtm": "20260411 11:21:18.989",
+  "merchantTimeZone": "+8:00",
+  "b2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Return",
+  "s2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Callback",
+  "clientType": "W",
+  "netsTxnStatus": "5",
+  "netsTxnMsg": "OK",
+  "stageRespCode": "1001-00000",
+  "merchantSvcList": [
+    "DD",
+    "CC_SGD",
+    "APS_SGD_DBS_PAYLAH",
+    "APS_SGD_NETSPAY",
+    "APS_SGD_OCBC_PAYANYONE",
+    "APS_SGD_UOB_MIGHTY"
+  ],
+  "paymtSvcInfoList": [
+    {
+      "paymtSvcId": "DD",
+      "netsMid": "877772001",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "CC_SGD",
+      "netsMid": "877772007",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_DBS_PAYLAH",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_NETSPAY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_OCBC_PAYANYONE",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_UOB_MIGHTY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    }
+  ],
+  "txnRand": "74382747328668788",
+  "merchantGrpName": "STYL SOLUTIONS - SOAPI3",
+  "language": "en",
+  "rsaModulus": "e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1",
+  "rsaExponent": "ca17",
+  "ss": "1",
+  "apiKey": "154eb31c-0f72-45bb-9249-84a1036fd1ca",
+  "actionCode": "0",
+  "msgActionCode": "tx01.02"
+}
+
+========================================
+Time     : 2026-04-11 11:21:18
+Endpoint : GeneratePaymentOption
+Stage    : HTTP_STATUS
+Payload  :
+Status: 200 OK
+
+========================================
+Time     : 2026-04-11 11:21:18
+Endpoint : GeneratePaymentOption
+Stage    : RESPONSE
+Payload  :
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+	href="https://uat2.enets.sg:443/GW2/css/bootstrap.min.css"
+	rel="stylesheet">
+<script
+	src="https://uat2.enets.sg:443/GW2/js/jquery-3.6.3.min.js"
+	type="text/javascript"></script>
+<script
+	src="https://uat2.enets.sg:443/GW2/js/polyFillForIE.js"
+	type="text/javascript"></script>
+<script type="text/javascript"
+	src="https://uat2.enets.sg:443/GW2/js/apps.js"></script>
+
+<script>
+	var buttonId;
+	var netsMid;
+
+	function setRouteId(pRouteTo, pSelected, pSpecSvc) {
+		document.getElementById('routeTo').value = pRouteTo;
+		buttonId = pSpecSvc;
+		netsMid = pSelected;
+	}
+
+	function submitOnePager() {
+		var jsonStr = document.getElementById('resp1JSON').value;
+		//	alert("jsonString is: " + jsonStr);
+		var routeTo = document.getElementById('routeTo').value;
+		//	alert("route To: " + routeTo)
+		var selectedOption = document.getElementById(buttonId).value;
+		processServiceList(jsonStr, selectedOption, netsMid, routeTo);
+	}
+
+	function clearSelection() {
+		var ele = document.getElementById(buttonId);
+		ele.checked = false;
+	}
+</script>
+
+</head>
+
+<body>
+
+
+
+
+	<div class="container">
+		<form id="testForm" name="testForm" class="form-horizontal">
+			<input type="hidden" id="resp1JSON" name="resp1JSON"
+				value='{
+  "netsMid": "UMID_877772003",
+  "submissionMode": "B",
+  "txnAmount": "7946",
+  "merchantTxnRef": "2026_04_11_032117",
+  "merchantTxnDtm": "20260411 11:21:17.990",
+  "netsMidIndicator": null,
+  "paymentType": "SALE",
+  "currencyCode": "SGD",
+  "netsTxnRef": "20260411112118190",
+  "netsTxnDtm": "20260411 11:21:18.989",
+  "merchantTimeZone": "+8:00",
+  "b2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Return",
+  "s2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Callback",
+  "clientType": "W",
+  "netsTxnStatus": "5",
+  "netsTxnMsg": "OK",
+  "stageRespCode": "1001-00000",
+  "merchantSvcList": [
+    "DD",
+    "CC_SGD",
+    "APS_SGD_DBS_PAYLAH",
+    "APS_SGD_NETSPAY",
+    "APS_SGD_OCBC_PAYANYONE",
+    "APS_SGD_UOB_MIGHTY"
+  ],
+  "paymtSvcInfoList": [
+    {
+      "paymtSvcId": "DD",
+      "netsMid": "877772001",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "CC_SGD",
+      "netsMid": "877772007",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_DBS_PAYLAH",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_NETSPAY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_OCBC_PAYANYONE",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_UOB_MIGHTY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    }
+  ],
+  "txnRand": "74382747328668788",
+  "merchantGrpName": "STYL SOLUTIONS - SOAPI3",
+  "language": "en",
+  "rsaModulus": "e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1",
+  "rsaExponent": "ca17",
+  "ss": "1",
+  "apiKey": "154eb31c-0f72-45bb-9249-84a1036fd1ca",
+  "actionCode": "0",
+  "msgActionCode": "tx01.02"
+}'> <input type="hidden" id="routeTo"
+				name="routeTo" value=''>
+
+
+			<div class="form-group" style="border-bottom: 1px solid #dedede;">
+				<div class="col-sm-8">
+					<h2>Payment Methods</h2>
+				</div>
+			</div>
+
+			
+			
+			
+			
+			
+
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+						
+						
+							
+								
+								
+							
+							
+						
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+
+
+			<div class="form-group" id="formDiv">
+
+				
+				
+					
+						
+							
+
+
+								
+
+									<div class="col-sm-3">
+										<input type="radio" name="paymentOption"
+											style="vertical-align: middle;" id="DD"
+											value="DD"
+											onclick='setRouteId("FEH","877772001","DD")' />
+
+										<img
+											src="https://uat2.enets.sg:443/GW2/image/eNETS_DD.png"
+											width="auto" height="auto">
+									</div>
+								
+
+								
+
+								
+
+							
+						
+						
+					
+				
+					
+						
+							
+
+
+								
+
+								
+									<div class="col-sm-3">
+
+										<input type="radio" name="paymentOption"
+											style="vertical-align: middle;" id="CC_1"
+											value="CC_1"
+											onclick='setRouteId("FEH","877772007","CC_1")' />
+										
+											<img
+												src="https://uat2.enets.sg:443/GW2/image/vm.png"
+												width="auto" height="auto" alt="visamaster">
+										
+
+										
+										
+
+
+										
+									</div>
+
+
+								
+
+								
+
+							
+						
+						
+					
+				
+					
+						
+						
+							
+								<div class="col-sm-3">
+									<input type="radio" name="paymentOption"
+										style="vertical-align: middle;" id="APS_SGD_UOB_MIGHTY"
+										value="APS_SGD_UOB_MIGHTY"
+										onclick='setRouteId("FEH","877772013","APS_SGD_UOB_MIGHTY")' />
+									<img
+										src="https://uat2.enets.sg:443/GW2/image/QRNETS.png"
+										width="45px" height="45px">
+									
+								</div>
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+				
+
+
+			</div>
+
+			<div class="form-group">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-3">
+					<input type="button" id="submitSelectedService"
+						class="btn btn-default" name="submitSelectedService"
+						value="Next >" onclick='submitOnePager()'>
+				</div>
+				<div class="col-sm-3"></div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
+
+========================================
+Time     : 2026-04-11 11:21:18
+Endpoint : PrepareOnePager
+Stage    : RESPONSE
+Payload  :
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+	href="https://uat2.enets.sg:443/GW2/css/bootstrap.min.css"
+	rel="stylesheet">
+<script
+	src="https://uat2.enets.sg:443/GW2/js/jquery-3.6.3.min.js"
+	type="text/javascript"></script>
+<script
+	src="https://uat2.enets.sg:443/GW2/js/polyFillForIE.js"
+	type="text/javascript"></script>
+<script type="text/javascript"
+	src="https://uat2.enets.sg:443/GW2/js/apps.js"></script>
+
+<script>
+	var buttonId;
+	var netsMid;
+
+	function setRouteId(pRouteTo, pSelected, pSpecSvc) {
+		document.getElementById('routeTo').value = pRouteTo;
+		buttonId = pSpecSvc;
+		netsMid = pSelected;
+	}
+
+	function submitOnePager() {
+		var jsonStr = document.getElementById('resp1JSON').value;
+		//	alert("jsonString is: " + jsonStr);
+		var routeTo = document.getElementById('routeTo').value;
+		//	alert("route To: " + routeTo)
+		var selectedOption = document.getElementById(buttonId).value;
+		processServiceList(jsonStr, selectedOption, netsMid, routeTo);
+	}
+
+	function clearSelection() {
+		var ele = document.getElementById(buttonId);
+		ele.checked = false;
+	}
+</script>
+
+</head>
+
+<body>
+
+
+
+
+	<div class="container">
+		<form id="testForm" name="testForm" class="form-horizontal">
+			<input type="hidden" id="resp1JSON" name="resp1JSON"
+				value='{
+  "netsMid": "UMID_877772003",
+  "submissionMode": "B",
+  "txnAmount": "7946",
+  "merchantTxnRef": "2026_04_11_032117",
+  "merchantTxnDtm": "20260411 11:21:17.990",
+  "netsMidIndicator": null,
+  "paymentType": "SALE",
+  "currencyCode": "SGD",
+  "netsTxnRef": "20260411112118190",
+  "netsTxnDtm": "20260411 11:21:18.989",
+  "merchantTimeZone": "+8:00",
+  "b2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Return",
+  "s2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Callback",
+  "clientType": "W",
+  "netsTxnStatus": "5",
+  "netsTxnMsg": "OK",
+  "stageRespCode": "1001-00000",
+  "merchantSvcList": [
+    "DD",
+    "CC_SGD",
+    "APS_SGD_DBS_PAYLAH",
+    "APS_SGD_NETSPAY",
+    "APS_SGD_OCBC_PAYANYONE",
+    "APS_SGD_UOB_MIGHTY"
+  ],
+  "paymtSvcInfoList": [
+    {
+      "paymtSvcId": "DD",
+      "netsMid": "877772001",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "CC_SGD",
+      "netsMid": "877772007",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_DBS_PAYLAH",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_NETSPAY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_OCBC_PAYANYONE",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_UOB_MIGHTY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    }
+  ],
+  "txnRand": "74382747328668788",
+  "merchantGrpName": "STYL SOLUTIONS - SOAPI3",
+  "language": "en",
+  "rsaModulus": "e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1",
+  "rsaExponent": "ca17",
+  "ss": "1",
+  "apiKey": "154eb31c-0f72-45bb-9249-84a1036fd1ca",
+  "actionCode": "0",
+  "msgActionCode": "tx01.02"
+}'> <input type="hidden" id="routeTo"
+				name="routeTo" value=''>
+
+
+			<div class="form-group" style="border-bottom: 1px solid #dedede;">
+				<div class="col-sm-8">
+					<h2>Payment Methods</h2>
+				</div>
+			</div>
+
+			
+			
+			
+			
+			
+
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+						
+						
+							
+								
+								
+							
+							
+						
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+
+
+			<div class="form-group" id="formDiv">
+
+				
+				
+					
+						
+							
+
+
+								
+
+									<div class="col-sm-3">
+										<input type="radio" name="paymentOption"
+											style="vertical-align: middle;" id="DD"
+											value="DD"
+											onclick='setRouteId("FEH","877772001","DD")' />
+
+										<img
+											src="https://uat2.enets.sg:443/GW2/image/eNETS_DD.png"
+											width="auto" height="auto">
+									</div>
+								
+
+								
+
+								
+
+							
+						
+						
+					
+				
+					
+						
+							
+
+
+								
+
+								
+									<div class="col-sm-3">
+
+										<input type="radio" name="paymentOption"
+											style="vertical-align: middle;" id="CC_1"
+											value="CC_1"
+											onclick='setRouteId("FEH","877772007","CC_1")' />
+										
+											<img
+												src="https://uat2.enets.sg:443/GW2/image/vm.png"
+												width="auto" height="auto" alt="visamaster">
+										
+
+										
+										
+
+
+										
+									</div>
+
+
+								
+
+								
+
+							
+						
+						
+					
+				
+					
+						
+						
+							
+								<div class="col-sm-3">
+									<input type="radio" name="paymentOption"
+										style="vertical-align: middle;" id="APS_SGD_UOB_MIGHTY"
+										value="APS_SGD_UOB_MIGHTY"
+										onclick='setRouteId("FEH","877772013","APS_SGD_UOB_MIGHTY")' />
+									<img
+										src="https://uat2.enets.sg:443/GW2/image/QRNETS.png"
+										width="45px" height="45px">
+									
+								</div>
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+				
+
+
+			</div>
+
+			<div class="form-group">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-3">
+					<input type="button" id="submitSelectedService"
+						class="btn btn-default" name="submitSelectedService"
+						value="Next >" onclick='submitOnePager()'>
+				</div>
+				<div class="col-sm-3"></div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
+
+========================================
+Time     : 2026-04-11 11:21:20
+Endpoint : PostDebitInit
+Stage    : REQUEST
+Payload  :
+{
+  "txnRand": "74382747328668788",
+  "paymentMode": "DD"
+}
+
+========================================
+Time     : 2026-04-11 11:21:20
+Endpoint : PostDebitInit
+Stage    : RESPONSE
+Payload  :
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NETS Payment Page</title>
+<link
+	href="https://uat2.enets.sg:443/GW2/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<style>
+html, body {
+	overflow-x: hidden;
+}
+
+.bankselection {
+	background: #fff;
+}
+
+div.hoverBankSel:hover {
+	background-color: red;
+}
+
+.input-group {
+	display: inline-block;
+}
+
+#inlineradio2 {
+	top: 13px;
+}
+</style>
+
+</head>
+
+<body>
+	<div class="container">
+
+		<form id="form1" name="form1" class="form-horizontal" action="/GW2/debit/init" method="post">
+			<input id="button" name="button" name="button" type="hidden" value=""/>
+			<input type="hidden" name="netsMid" value="UMID_877772003" />
+			<input id="netsTxnRef" name="netsTxnRef" type="hidden" value="20260411112118190" value=""/>
+			<input id="merchantTxnRef" name="merchantTxnRef" type="hidden" value="2026_04_11_032117" value=""/>
+			<input id="txnRand" name="txnRand" type="hidden" value="74382747328668788" value=""/>
+
+			<div class="form-group">
+				
+
+			</div>
+
+
+
+			<div class="form-group" style="border-bottom: 1px solid #dedede;">
+				<div class="col-sm-8">
+					<h4>Payment Methods</h4>
+				</div>
+			</div>
+
+			<div class="form-group" style="margin-left: 10px;">
+				<div class="col-sm-4">
+					<input type="radio" style="vertical-align: text-bottom;"
+						name="eNets" value="" checked="checked"> <img
+						src="https://uat2.enets.sg:443/GW2/image/eNETS_DD.png"
+						width="auto" height="40px">
+				</div>
+			</div>
+
+			<div class="form-group"
+				style="margin-bottom: 1px; margin-left: 10px;">
+				<div class="col-sm-8" style="margin-bottom: -10px;">
+					<p style="color: #9e9c9c; font-size: large;">Please select bank</p>
+				</div>
+			</div>
+
+
+			<div class="form-group" style="margin-left: 15px;">
+			
+				
+				
+				
+
+				
+				
+				
+				
+				
+					
+						
+					
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="814">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_814.gif" width="70px" height="40px" alt="814">
+							</div>
+
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1076">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1076.gif" width="70px" height="40px" alt="1076">
+							</div>
+
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1075">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1075.gif" width="70px" height="40px" alt="1075">
+							</div>
+
+						
+					
+						
+					
+						
+					
+						
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1081">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1081.gif" width="70px" height="40px" alt="1081">
+							</div>
+
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1116">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1116.gif" width="70px" height="40px" alt="1116">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1117">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1117.gif" width="70px" height="40px" alt="1117">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1118">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1118.gif" width="70px" height="40px" alt="1118">
+							</div>
+
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="468">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_468.gif" width="70px" height="40px" alt="468">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="800">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_800.gif" width="70px" height="40px" alt="800">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="156">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_156.gif" width="70px" height="40px" alt="156">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="376">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_376.gif" width="70px" height="40px" alt="376">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="471">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_471.gif" width="70px" height="40px" alt="471">
+							</div>
+
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="697">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_697.gif" width="70px" height="40px" alt="697">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="913">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_913.gif" width="70px" height="40px" alt="913">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1135">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1135.gif" width="70px" height="40px" alt="1135">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1095">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1095.gif" width="70px" height="40px" alt="1095">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="793">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_793.gif" width="70px" height="40px" alt="793">
+							</div>
+
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1055">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1055.gif" width="70px" height="40px" alt="1055">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="575">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_575.gif" width="70px" height="40px" alt="575">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="152">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_152.gif" width="70px" height="40px" alt="152">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="578">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_578.gif" width="70px" height="40px" alt="578">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="579">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_579.gif" width="70px" height="40px" alt="579">
+							</div>
+
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="160">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_160.gif" width="70px" height="40px" alt="160">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="733">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_733.gif" width="70px" height="40px" alt="733">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="873">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_873.gif" width="70px" height="40px" alt="873">
+							</div>
+
+						
+					
+					
+				
+				
+				
+				
+				
+				
+				
+
+				
+
+			</div>
+
+
+
+			<div class="form-group" style="margin-left: 15px;">
+			<div class="col-sm-3"></div>
+				<div class="col-md-3">
+					<button type="button" class="btn btn-default" id="btnSubmit"
+						style="margin-left: -10px; width: 100px;"
+						onclick='onBtnClick("submit")'>Submit</button>
+					<button type="button" class="btn btn-default" id="btnCancel"
+						style="margin-left: 10px; width: 100px;"
+						onclick='onBtnClick("cancel")'>Back</button>
+				</div>
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3"></div>
+			</div>
+	</div>
+	</form>
+
+	<samp style="font-family: inherit;"> Important Notice: Please note the transaction information should you need to make any queries on this transaction. </samp>
+	</div>
+	<script>
+		console.log("in bankSel");
+		console.log(document);
+
+		function BanEnterKey() {
+			if (window.event.keyCode == 13) {
+				return false;
+			} else {
+				return true;
+			}
+		}
+
+		function microsoftKeyPress() {
+			if (window.event.keyCode == 13) {
+				// alert('Using IE, right? User pressed Enter key, right?');
+				return checkFields();
+			} else {
+				return false;
+			}
+		}
+
+		// XSS fix for PT-M06
+	//	function frameBuster() { Fortfy fix
+			/* Fix that would allow framing: SHINE [Incident ID: 203821]*/
+	//		if (top != self)
+	//			top.location = encodeURI(self.location);
+
+	//	}
+
+		function onBtnClick(buttonId) {
+			var resultPath = 'https://uat2.enets.sg:443/GW2';
+			
+			var ddActionPath = resultPath + "/debit/bankIdSubmitForm";
+			//validate
+			if (buttonId == "submit") {
+  				var radios = document.getElementsByName('selBankID');
+				var isRadioBtnSel = false;
+ 				for (var i = 0; i < radios.length; i++) {
+        			if (radios[i].checked) {
+       					// alert("Selected Value = " + radios[i].value);
+        				isRadioBtnSel = true; // checked
+   					 }//if
+				}//for
+			if(!isRadioBtnSel){
+				alert("Please select a bank.");
+				return false;
+			}
+		}
+
+			document.getElementById("btnCancel").style.display = "none";
+			document.getElementById("button").value = buttonId;
+			document.getElementById("form1").action = ddActionPath;
+			//
+			console.log(document.getElementById("form1"));
+			document.getElementById("form1").submit();
+		}
+	</script>
+</body>
+</html>
+
+========================================
+Time     : 2026-04-11 11:25:56
+Endpoint : PaymentGenerateTxnReq
+Stage    : REQUEST
+Payload  :
+{"txnAmount":79.46,"merchantTxnRef":"2026_04_11_032556"}
+
+========================================
+Time     : 2026-04-11 11:25:57
+Endpoint : PaymentGenerateTxnReq
+Stage    : RESPONSE
+Payload  :
+{"ss":"1","msg":{"netsMid":"UMID_877772003","submissionMode":"B","txnAmount":"7946","merchantTxnRef":"2026_04_11_032556","merchantTxnDtm":"20260411 11:25:56.891","paymentType":"SALE","currencyCode":"SGD","netsTxnRef":"20260411112557192","netsTxnDtm":"20260411 11:25:57.928","merchantTimeZone":"+8:00","b2sTxnEndURL":"https://weborder.erp.evolut.com.sg/SR/Return","s2sTxnEndURL":"https://weborder.erp.evolut.com.sg/SR/Callback","clientType":"W","netsTxnStatus":"5","netsTxnMsg":"OK","stageRespCode":"1001-00000","merchantSvcList":["DD","CC_SGD","APS_SGD_DBS_PAYLAH","APS_SGD_NETSPAY","APS_SGD_OCBC_PAYANYONE","APS_SGD_UOB_MIGHTY"],"txnRand":"89083221011708485","merchantGrpName":"STYL SOLUTIONS - SOAPI3","paymtSvcInfoList":[{"paymtSvcId":"DD","netsMid":"877772001","tsReqFlag":null},{"paymtSvcId":"CC_SGD","netsMid":"877772007","tsReqFlag":null},{"paymtSvcId":"APS_SGD_DBS_PAYLAH","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_NETSPAY","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_OCBC_PAYANYONE","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_UOB_MIGHTY","netsMid":"877772013","tsReqFlag":null}],"language":"en","rsaModulus":"e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1","rsaExponent":"ca17","ss":"1","apiKey":"154eb31c-0f72-45bb-9249-84a1036fd1ca","actionCode":"0","msgActionCode":"tx01.02"}}
+
+========================================
+Time     : 2026-04-11 11:25:57
+Endpoint : PrepareOnePager
+Stage    : REQUEST
+Payload  :
+{"netsMid":"UMID_877772003","submissionMode":"B","txnAmount":"7946","merchantTxnRef":"2026_04_11_032556","merchantTxnDtm":"20260411 11:25:56.891","netsMidIndicator":null,"paymentType":"SALE","currencyCode":"SGD","netsTxnRef":"20260411112557192","netsTxnDtm":"20260411 11:25:57.928","merchantTimeZone":"+8:00","b2sTxnEndURL":"https://weborder.erp.evolut.com.sg/SR/Return","s2sTxnEndURL":"https://weborder.erp.evolut.com.sg/SR/Callback","clientType":"W","netsTxnStatus":"5","netsTxnMsg":"OK","stageRespCode":"1001-00000","merchantSvcList":["DD","CC_SGD","APS_SGD_DBS_PAYLAH","APS_SGD_NETSPAY","APS_SGD_OCBC_PAYANYONE","APS_SGD_UOB_MIGHTY"],"paymtSvcInfoList":[{"paymtSvcId":"DD","netsMid":"877772001","tsReqFlag":null},{"paymtSvcId":"CC_SGD","netsMid":"877772007","tsReqFlag":null},{"paymtSvcId":"APS_SGD_DBS_PAYLAH","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_NETSPAY","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_OCBC_PAYANYONE","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_UOB_MIGHTY","netsMid":"877772013","tsReqFlag":null}],"txnRand":"89083221011708485","merchantGrpName":"STYL SOLUTIONS - SOAPI3","language":"en","rsaModulus":"e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1","rsaExponent":"ca17","ss":"1","apiKey":"154eb31c-0f72-45bb-9249-84a1036fd1ca","actionCode":"0","msgActionCode":"tx01.02"}
+
+========================================
+Time     : 2026-04-11 11:25:57
+Endpoint : PrepareOnePager
+Stage    : OUTGOING_GENERATE_OPTION
+Payload  :
+{
+  "netsMid": "UMID_877772003",
+  "submissionMode": "B",
+  "txnAmount": "7946",
+  "merchantTxnRef": "2026_04_11_032556",
+  "merchantTxnDtm": "20260411 11:25:56.891",
+  "netsMidIndicator": null,
+  "paymentType": "SALE",
+  "currencyCode": "SGD",
+  "netsTxnRef": "20260411112557192",
+  "netsTxnDtm": "20260411 11:25:57.928",
+  "merchantTimeZone": "+8:00",
+  "b2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Return",
+  "s2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Callback",
+  "clientType": "W",
+  "netsTxnStatus": "5",
+  "netsTxnMsg": "OK",
+  "stageRespCode": "1001-00000",
+  "merchantSvcList": [
+    "DD",
+    "CC_SGD",
+    "APS_SGD_DBS_PAYLAH",
+    "APS_SGD_NETSPAY",
+    "APS_SGD_OCBC_PAYANYONE",
+    "APS_SGD_UOB_MIGHTY"
+  ],
+  "paymtSvcInfoList": [
+    {
+      "paymtSvcId": "DD",
+      "netsMid": "877772001",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "CC_SGD",
+      "netsMid": "877772007",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_DBS_PAYLAH",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_NETSPAY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_OCBC_PAYANYONE",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_UOB_MIGHTY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    }
+  ],
+  "txnRand": "89083221011708485",
+  "merchantGrpName": "STYL SOLUTIONS - SOAPI3",
+  "language": "en",
+  "rsaModulus": "e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1",
+  "rsaExponent": "ca17",
+  "ss": "1",
+  "apiKey": "154eb31c-0f72-45bb-9249-84a1036fd1ca",
+  "actionCode": "0",
+  "msgActionCode": "tx01.02"
+}
+
+========================================
+Time     : 2026-04-11 11:25:57
+Endpoint : GeneratePaymentOption
+Stage    : OUTGOING_REQUEST
+Payload  :
+{
+  "netsMid": "UMID_877772003",
+  "submissionMode": "B",
+  "txnAmount": "7946",
+  "merchantTxnRef": "2026_04_11_032556",
+  "merchantTxnDtm": "20260411 11:25:56.891",
+  "netsMidIndicator": null,
+  "paymentType": "SALE",
+  "currencyCode": "SGD",
+  "netsTxnRef": "20260411112557192",
+  "netsTxnDtm": "20260411 11:25:57.928",
+  "merchantTimeZone": "+8:00",
+  "b2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Return",
+  "s2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Callback",
+  "clientType": "W",
+  "netsTxnStatus": "5",
+  "netsTxnMsg": "OK",
+  "stageRespCode": "1001-00000",
+  "merchantSvcList": [
+    "DD",
+    "CC_SGD",
+    "APS_SGD_DBS_PAYLAH",
+    "APS_SGD_NETSPAY",
+    "APS_SGD_OCBC_PAYANYONE",
+    "APS_SGD_UOB_MIGHTY"
+  ],
+  "paymtSvcInfoList": [
+    {
+      "paymtSvcId": "DD",
+      "netsMid": "877772001",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "CC_SGD",
+      "netsMid": "877772007",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_DBS_PAYLAH",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_NETSPAY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_OCBC_PAYANYONE",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_UOB_MIGHTY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    }
+  ],
+  "txnRand": "89083221011708485",
+  "merchantGrpName": "STYL SOLUTIONS - SOAPI3",
+  "language": "en",
+  "rsaModulus": "e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1",
+  "rsaExponent": "ca17",
+  "ss": "1",
+  "apiKey": "154eb31c-0f72-45bb-9249-84a1036fd1ca",
+  "actionCode": "0",
+  "msgActionCode": "tx01.02"
+}
+
+========================================
+Time     : 2026-04-11 11:25:57
+Endpoint : GeneratePaymentOption
+Stage    : HTTP_STATUS
+Payload  :
+Status: 200 OK
+
+========================================
+Time     : 2026-04-11 11:25:57
+Endpoint : GeneratePaymentOption
+Stage    : RESPONSE
+Payload  :
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+	href="https://uat2.enets.sg:443/GW2/css/bootstrap.min.css"
+	rel="stylesheet">
+<script
+	src="https://uat2.enets.sg:443/GW2/js/jquery-3.6.3.min.js"
+	type="text/javascript"></script>
+<script
+	src="https://uat2.enets.sg:443/GW2/js/polyFillForIE.js"
+	type="text/javascript"></script>
+<script type="text/javascript"
+	src="https://uat2.enets.sg:443/GW2/js/apps.js"></script>
+
+<script>
+	var buttonId;
+	var netsMid;
+
+	function setRouteId(pRouteTo, pSelected, pSpecSvc) {
+		document.getElementById('routeTo').value = pRouteTo;
+		buttonId = pSpecSvc;
+		netsMid = pSelected;
+	}
+
+	function submitOnePager() {
+		var jsonStr = document.getElementById('resp1JSON').value;
+		//	alert("jsonString is: " + jsonStr);
+		var routeTo = document.getElementById('routeTo').value;
+		//	alert("route To: " + routeTo)
+		var selectedOption = document.getElementById(buttonId).value;
+		processServiceList(jsonStr, selectedOption, netsMid, routeTo);
+	}
+
+	function clearSelection() {
+		var ele = document.getElementById(buttonId);
+		ele.checked = false;
+	}
+</script>
+
+</head>
+
+<body>
+
+
+
+
+	<div class="container">
+		<form id="testForm" name="testForm" class="form-horizontal">
+			<input type="hidden" id="resp1JSON" name="resp1JSON"
+				value='{
+  "netsMid": "UMID_877772003",
+  "submissionMode": "B",
+  "txnAmount": "7946",
+  "merchantTxnRef": "2026_04_11_032556",
+  "merchantTxnDtm": "20260411 11:25:56.891",
+  "netsMidIndicator": null,
+  "paymentType": "SALE",
+  "currencyCode": "SGD",
+  "netsTxnRef": "20260411112557192",
+  "netsTxnDtm": "20260411 11:25:57.928",
+  "merchantTimeZone": "+8:00",
+  "b2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Return",
+  "s2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Callback",
+  "clientType": "W",
+  "netsTxnStatus": "5",
+  "netsTxnMsg": "OK",
+  "stageRespCode": "1001-00000",
+  "merchantSvcList": [
+    "DD",
+    "CC_SGD",
+    "APS_SGD_DBS_PAYLAH",
+    "APS_SGD_NETSPAY",
+    "APS_SGD_OCBC_PAYANYONE",
+    "APS_SGD_UOB_MIGHTY"
+  ],
+  "paymtSvcInfoList": [
+    {
+      "paymtSvcId": "DD",
+      "netsMid": "877772001",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "CC_SGD",
+      "netsMid": "877772007",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_DBS_PAYLAH",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_NETSPAY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_OCBC_PAYANYONE",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_UOB_MIGHTY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    }
+  ],
+  "txnRand": "89083221011708485",
+  "merchantGrpName": "STYL SOLUTIONS - SOAPI3",
+  "language": "en",
+  "rsaModulus": "e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1",
+  "rsaExponent": "ca17",
+  "ss": "1",
+  "apiKey": "154eb31c-0f72-45bb-9249-84a1036fd1ca",
+  "actionCode": "0",
+  "msgActionCode": "tx01.02"
+}'> <input type="hidden" id="routeTo"
+				name="routeTo" value=''>
+
+
+			<div class="form-group" style="border-bottom: 1px solid #dedede;">
+				<div class="col-sm-8">
+					<h2>Payment Methods</h2>
+				</div>
+			</div>
+
+			
+			
+			
+			
+			
+
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+						
+						
+							
+								
+								
+							
+							
+						
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+
+
+			<div class="form-group" id="formDiv">
+
+				
+				
+					
+						
+							
+
+
+								
+
+									<div class="col-sm-3">
+										<input type="radio" name="paymentOption"
+											style="vertical-align: middle;" id="DD"
+											value="DD"
+											onclick='setRouteId("FEH","877772001","DD")' />
+
+										<img
+											src="https://uat2.enets.sg:443/GW2/image/eNETS_DD.png"
+											width="auto" height="auto">
+									</div>
+								
+
+								
+
+								
+
+							
+						
+						
+					
+				
+					
+						
+							
+
+
+								
+
+								
+									<div class="col-sm-3">
+
+										<input type="radio" name="paymentOption"
+											style="vertical-align: middle;" id="CC_1"
+											value="CC_1"
+											onclick='setRouteId("FEH","877772007","CC_1")' />
+										
+											<img
+												src="https://uat2.enets.sg:443/GW2/image/vm.png"
+												width="auto" height="auto" alt="visamaster">
+										
+
+										
+										
+
+
+										
+									</div>
+
+
+								
+
+								
+
+							
+						
+						
+					
+				
+					
+						
+						
+							
+								<div class="col-sm-3">
+									<input type="radio" name="paymentOption"
+										style="vertical-align: middle;" id="APS_SGD_UOB_MIGHTY"
+										value="APS_SGD_UOB_MIGHTY"
+										onclick='setRouteId("FEH","877772013","APS_SGD_UOB_MIGHTY")' />
+									<img
+										src="https://uat2.enets.sg:443/GW2/image/QRNETS.png"
+										width="45px" height="45px">
+									
+								</div>
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+				
+
+
+			</div>
+
+			<div class="form-group">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-3">
+					<input type="button" id="submitSelectedService"
+						class="btn btn-default" name="submitSelectedService"
+						value="Next >" onclick='submitOnePager()'>
+				</div>
+				<div class="col-sm-3"></div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
+
+========================================
+Time     : 2026-04-11 11:25:57
+Endpoint : PrepareOnePager
+Stage    : RESPONSE
+Payload  :
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+	href="https://uat2.enets.sg:443/GW2/css/bootstrap.min.css"
+	rel="stylesheet">
+<script
+	src="https://uat2.enets.sg:443/GW2/js/jquery-3.6.3.min.js"
+	type="text/javascript"></script>
+<script
+	src="https://uat2.enets.sg:443/GW2/js/polyFillForIE.js"
+	type="text/javascript"></script>
+<script type="text/javascript"
+	src="https://uat2.enets.sg:443/GW2/js/apps.js"></script>
+
+<script>
+	var buttonId;
+	var netsMid;
+
+	function setRouteId(pRouteTo, pSelected, pSpecSvc) {
+		document.getElementById('routeTo').value = pRouteTo;
+		buttonId = pSpecSvc;
+		netsMid = pSelected;
+	}
+
+	function submitOnePager() {
+		var jsonStr = document.getElementById('resp1JSON').value;
+		//	alert("jsonString is: " + jsonStr);
+		var routeTo = document.getElementById('routeTo').value;
+		//	alert("route To: " + routeTo)
+		var selectedOption = document.getElementById(buttonId).value;
+		processServiceList(jsonStr, selectedOption, netsMid, routeTo);
+	}
+
+	function clearSelection() {
+		var ele = document.getElementById(buttonId);
+		ele.checked = false;
+	}
+</script>
+
+</head>
+
+<body>
+
+
+
+
+	<div class="container">
+		<form id="testForm" name="testForm" class="form-horizontal">
+			<input type="hidden" id="resp1JSON" name="resp1JSON"
+				value='{
+  "netsMid": "UMID_877772003",
+  "submissionMode": "B",
+  "txnAmount": "7946",
+  "merchantTxnRef": "2026_04_11_032556",
+  "merchantTxnDtm": "20260411 11:25:56.891",
+  "netsMidIndicator": null,
+  "paymentType": "SALE",
+  "currencyCode": "SGD",
+  "netsTxnRef": "20260411112557192",
+  "netsTxnDtm": "20260411 11:25:57.928",
+  "merchantTimeZone": "+8:00",
+  "b2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Return",
+  "s2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Callback",
+  "clientType": "W",
+  "netsTxnStatus": "5",
+  "netsTxnMsg": "OK",
+  "stageRespCode": "1001-00000",
+  "merchantSvcList": [
+    "DD",
+    "CC_SGD",
+    "APS_SGD_DBS_PAYLAH",
+    "APS_SGD_NETSPAY",
+    "APS_SGD_OCBC_PAYANYONE",
+    "APS_SGD_UOB_MIGHTY"
+  ],
+  "paymtSvcInfoList": [
+    {
+      "paymtSvcId": "DD",
+      "netsMid": "877772001",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "CC_SGD",
+      "netsMid": "877772007",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_DBS_PAYLAH",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_NETSPAY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_OCBC_PAYANYONE",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_UOB_MIGHTY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    }
+  ],
+  "txnRand": "89083221011708485",
+  "merchantGrpName": "STYL SOLUTIONS - SOAPI3",
+  "language": "en",
+  "rsaModulus": "e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1",
+  "rsaExponent": "ca17",
+  "ss": "1",
+  "apiKey": "154eb31c-0f72-45bb-9249-84a1036fd1ca",
+  "actionCode": "0",
+  "msgActionCode": "tx01.02"
+}'> <input type="hidden" id="routeTo"
+				name="routeTo" value=''>
+
+
+			<div class="form-group" style="border-bottom: 1px solid #dedede;">
+				<div class="col-sm-8">
+					<h2>Payment Methods</h2>
+				</div>
+			</div>
+
+			
+			
+			
+			
+			
+
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+						
+						
+							
+								
+								
+							
+							
+						
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+
+
+			<div class="form-group" id="formDiv">
+
+				
+				
+					
+						
+							
+
+
+								
+
+									<div class="col-sm-3">
+										<input type="radio" name="paymentOption"
+											style="vertical-align: middle;" id="DD"
+											value="DD"
+											onclick='setRouteId("FEH","877772001","DD")' />
+
+										<img
+											src="https://uat2.enets.sg:443/GW2/image/eNETS_DD.png"
+											width="auto" height="auto">
+									</div>
+								
+
+								
+
+								
+
+							
+						
+						
+					
+				
+					
+						
+							
+
+
+								
+
+								
+									<div class="col-sm-3">
+
+										<input type="radio" name="paymentOption"
+											style="vertical-align: middle;" id="CC_1"
+											value="CC_1"
+											onclick='setRouteId("FEH","877772007","CC_1")' />
+										
+											<img
+												src="https://uat2.enets.sg:443/GW2/image/vm.png"
+												width="auto" height="auto" alt="visamaster">
+										
+
+										
+										
+
+
+										
+									</div>
+
+
+								
+
+								
+
+							
+						
+						
+					
+				
+					
+						
+						
+							
+								<div class="col-sm-3">
+									<input type="radio" name="paymentOption"
+										style="vertical-align: middle;" id="APS_SGD_UOB_MIGHTY"
+										value="APS_SGD_UOB_MIGHTY"
+										onclick='setRouteId("FEH","877772013","APS_SGD_UOB_MIGHTY")' />
+									<img
+										src="https://uat2.enets.sg:443/GW2/image/QRNETS.png"
+										width="45px" height="45px">
+									
+								</div>
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+				
+
+
+			</div>
+
+			<div class="form-group">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-3">
+					<input type="button" id="submitSelectedService"
+						class="btn btn-default" name="submitSelectedService"
+						value="Next >" onclick='submitOnePager()'>
+				</div>
+				<div class="col-sm-3"></div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
+
+========================================
+Time     : 2026-04-11 11:26:09
+Endpoint : PostDebitInit
+Stage    : REQUEST
+Payload  :
+{
+  "txnRand": "89083221011708485",
+  "paymentMode": "DD"
+}
+
+========================================
+Time     : 2026-04-11 11:26:09
+Endpoint : PostDebitInit
+Stage    : RESPONSE
+Payload  :
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NETS Payment Page</title>
+<link
+	href="https://uat2.enets.sg:443/GW2/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<style>
+html, body {
+	overflow-x: hidden;
+}
+
+.bankselection {
+	background: #fff;
+}
+
+div.hoverBankSel:hover {
+	background-color: red;
+}
+
+.input-group {
+	display: inline-block;
+}
+
+#inlineradio2 {
+	top: 13px;
+}
+</style>
+
+</head>
+
+<body>
+	<div class="container">
+
+		<form id="form1" name="form1" class="form-horizontal" action="/GW2/debit/init" method="post">
+			<input id="button" name="button" name="button" type="hidden" value=""/>
+			<input type="hidden" name="netsMid" value="UMID_877772003" />
+			<input id="netsTxnRef" name="netsTxnRef" type="hidden" value="20260411112557192" value=""/>
+			<input id="merchantTxnRef" name="merchantTxnRef" type="hidden" value="2026_04_11_032556" value=""/>
+			<input id="txnRand" name="txnRand" type="hidden" value="89083221011708485" value=""/>
+
+			<div class="form-group">
+				
+
+			</div>
+
+
+
+			<div class="form-group" style="border-bottom: 1px solid #dedede;">
+				<div class="col-sm-8">
+					<h4>Payment Methods</h4>
+				</div>
+			</div>
+
+			<div class="form-group" style="margin-left: 10px;">
+				<div class="col-sm-4">
+					<input type="radio" style="vertical-align: text-bottom;"
+						name="eNets" value="" checked="checked"> <img
+						src="https://uat2.enets.sg:443/GW2/image/eNETS_DD.png"
+						width="auto" height="40px">
+				</div>
+			</div>
+
+			<div class="form-group"
+				style="margin-bottom: 1px; margin-left: 10px;">
+				<div class="col-sm-8" style="margin-bottom: -10px;">
+					<p style="color: #9e9c9c; font-size: large;">Please select bank</p>
+				</div>
+			</div>
+
+
+			<div class="form-group" style="margin-left: 15px;">
+			
+				
+				
+				
+
+				
+				
+				
+				
+				
+					
+						
+					
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="814">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_814.gif" width="70px" height="40px" alt="814">
+							</div>
+
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1076">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1076.gif" width="70px" height="40px" alt="1076">
+							</div>
+
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1075">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1075.gif" width="70px" height="40px" alt="1075">
+							</div>
+
+						
+					
+						
+					
+						
+					
+						
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1081">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1081.gif" width="70px" height="40px" alt="1081">
+							</div>
+
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1116">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1116.gif" width="70px" height="40px" alt="1116">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1117">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1117.gif" width="70px" height="40px" alt="1117">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1118">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1118.gif" width="70px" height="40px" alt="1118">
+							</div>
+
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="468">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_468.gif" width="70px" height="40px" alt="468">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="800">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_800.gif" width="70px" height="40px" alt="800">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="156">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_156.gif" width="70px" height="40px" alt="156">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="376">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_376.gif" width="70px" height="40px" alt="376">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="471">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_471.gif" width="70px" height="40px" alt="471">
+							</div>
+
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="697">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_697.gif" width="70px" height="40px" alt="697">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="913">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_913.gif" width="70px" height="40px" alt="913">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1135">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1135.gif" width="70px" height="40px" alt="1135">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1095">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1095.gif" width="70px" height="40px" alt="1095">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="793">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_793.gif" width="70px" height="40px" alt="793">
+							</div>
+
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1055">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1055.gif" width="70px" height="40px" alt="1055">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="575">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_575.gif" width="70px" height="40px" alt="575">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="152">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_152.gif" width="70px" height="40px" alt="152">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="578">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_578.gif" width="70px" height="40px" alt="578">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="579">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_579.gif" width="70px" height="40px" alt="579">
+							</div>
+
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="160">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_160.gif" width="70px" height="40px" alt="160">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="733">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_733.gif" width="70px" height="40px" alt="733">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="873">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_873.gif" width="70px" height="40px" alt="873">
+							</div>
+
+						
+					
+					
+				
+				
+				
+				
+				
+				
+				
+
+				
+
+			</div>
+
+
+
+			<div class="form-group" style="margin-left: 15px;">
+			<div class="col-sm-3"></div>
+				<div class="col-md-3">
+					<button type="button" class="btn btn-default" id="btnSubmit"
+						style="margin-left: -10px; width: 100px;"
+						onclick='onBtnClick("submit")'>Submit</button>
+					<button type="button" class="btn btn-default" id="btnCancel"
+						style="margin-left: 10px; width: 100px;"
+						onclick='onBtnClick("cancel")'>Back</button>
+				</div>
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3"></div>
+			</div>
+	</div>
+	</form>
+
+	<samp style="font-family: inherit;"> Important Notice: Please note the transaction information should you need to make any queries on this transaction. </samp>
+	</div>
+	<script>
+		console.log("in bankSel");
+		console.log(document);
+
+		function BanEnterKey() {
+			if (window.event.keyCode == 13) {
+				return false;
+			} else {
+				return true;
+			}
+		}
+
+		function microsoftKeyPress() {
+			if (window.event.keyCode == 13) {
+				// alert('Using IE, right? User pressed Enter key, right?');
+				return checkFields();
+			} else {
+				return false;
+			}
+		}
+
+		// XSS fix for PT-M06
+	//	function frameBuster() { Fortfy fix
+			/* Fix that would allow framing: SHINE [Incident ID: 203821]*/
+	//		if (top != self)
+	//			top.location = encodeURI(self.location);
+
+	//	}
+
+		function onBtnClick(buttonId) {
+			var resultPath = 'https://uat2.enets.sg:443/GW2';
+			
+			var ddActionPath = resultPath + "/debit/bankIdSubmitForm";
+			//validate
+			if (buttonId == "submit") {
+  				var radios = document.getElementsByName('selBankID');
+				var isRadioBtnSel = false;
+ 				for (var i = 0; i < radios.length; i++) {
+        			if (radios[i].checked) {
+       					// alert("Selected Value = " + radios[i].value);
+        				isRadioBtnSel = true; // checked
+   					 }//if
+				}//for
+			if(!isRadioBtnSel){
+				alert("Please select a bank.");
+				return false;
+			}
+		}
+
+			document.getElementById("btnCancel").style.display = "none";
+			document.getElementById("button").value = buttonId;
+			document.getElementById("form1").action = ddActionPath;
+			//
+			console.log(document.getElementById("form1"));
+			document.getElementById("form1").submit();
+		}
+	</script>
+</body>
+</html>
+
+========================================
+Time     : 2026-04-11 11:35:03
+Endpoint : PaymentGenerateTxnReq
+Stage    : REQUEST
+Payload  :
+{"txnAmount":79.46,"merchantTxnRef":"2026_04_11_033502"}
+
+========================================
+Time     : 2026-04-11 11:35:03
+Endpoint : PaymentGenerateTxnReq
+Stage    : RESPONSE
+Payload  :
+{"ss":"1","msg":{"netsMid":"UMID_877772003","submissionMode":"B","txnAmount":"7946","merchantTxnRef":"2026_04_11_033502","merchantTxnDtm":"20260411 11:35:03.478","paymentType":"SALE","currencyCode":"SGD","netsTxnRef":"20260411113504196","netsTxnDtm":"20260411 11:35:04.541","merchantTimeZone":"+8:00","b2sTxnEndURL":"https://weborder.erp.evolut.com.sg/SR/Return","s2sTxnEndURL":"https://weborder.erp.evolut.com.sg/SR/Callback","clientType":"W","netsTxnStatus":"5","netsTxnMsg":"OK","stageRespCode":"1001-00000","merchantSvcList":["DD","CC_SGD","APS_SGD_DBS_PAYLAH","APS_SGD_NETSPAY","APS_SGD_OCBC_PAYANYONE","APS_SGD_UOB_MIGHTY"],"txnRand":"57161424307612406","merchantGrpName":"STYL SOLUTIONS - SOAPI3","paymtSvcInfoList":[{"paymtSvcId":"DD","netsMid":"877772001","tsReqFlag":null},{"paymtSvcId":"CC_SGD","netsMid":"877772007","tsReqFlag":null},{"paymtSvcId":"APS_SGD_DBS_PAYLAH","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_NETSPAY","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_OCBC_PAYANYONE","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_UOB_MIGHTY","netsMid":"877772013","tsReqFlag":null}],"language":"en","rsaModulus":"e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1","rsaExponent":"ca17","ss":"1","apiKey":"154eb31c-0f72-45bb-9249-84a1036fd1ca","actionCode":"0","msgActionCode":"tx01.02"}}
+
+========================================
+Time     : 2026-04-11 11:35:03
+Endpoint : PrepareOnePager
+Stage    : REQUEST
+Payload  :
+{"netsMid":"UMID_877772003","submissionMode":"B","txnAmount":"7946","merchantTxnRef":"2026_04_11_033502","merchantTxnDtm":"20260411 11:35:03.478","netsMidIndicator":null,"paymentType":"SALE","currencyCode":"SGD","netsTxnRef":"20260411113504196","netsTxnDtm":"20260411 11:35:04.541","merchantTimeZone":"+8:00","b2sTxnEndURL":"https://weborder.erp.evolut.com.sg/SR/Return","s2sTxnEndURL":"https://weborder.erp.evolut.com.sg/SR/Callback","clientType":"W","netsTxnStatus":"5","netsTxnMsg":"OK","stageRespCode":"1001-00000","merchantSvcList":["DD","CC_SGD","APS_SGD_DBS_PAYLAH","APS_SGD_NETSPAY","APS_SGD_OCBC_PAYANYONE","APS_SGD_UOB_MIGHTY"],"paymtSvcInfoList":[{"paymtSvcId":"DD","netsMid":"877772001","tsReqFlag":null},{"paymtSvcId":"CC_SGD","netsMid":"877772007","tsReqFlag":null},{"paymtSvcId":"APS_SGD_DBS_PAYLAH","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_NETSPAY","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_OCBC_PAYANYONE","netsMid":"877772013","tsReqFlag":null},{"paymtSvcId":"APS_SGD_UOB_MIGHTY","netsMid":"877772013","tsReqFlag":null}],"txnRand":"57161424307612406","merchantGrpName":"STYL SOLUTIONS - SOAPI3","language":"en","rsaModulus":"e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1","rsaExponent":"ca17","ss":"1","apiKey":"154eb31c-0f72-45bb-9249-84a1036fd1ca","actionCode":"0","msgActionCode":"tx01.02"}
+
+========================================
+Time     : 2026-04-11 11:35:04
+Endpoint : PrepareOnePager
+Stage    : OUTGOING_GENERATE_OPTION
+Payload  :
+{
+  "netsMid": "UMID_877772003",
+  "submissionMode": "B",
+  "txnAmount": "7946",
+  "merchantTxnRef": "2026_04_11_033502",
+  "merchantTxnDtm": "20260411 11:35:03.478",
+  "netsMidIndicator": null,
+  "paymentType": "SALE",
+  "currencyCode": "SGD",
+  "netsTxnRef": "20260411113504196",
+  "netsTxnDtm": "20260411 11:35:04.541",
+  "merchantTimeZone": "+8:00",
+  "b2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Return",
+  "s2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Callback",
+  "clientType": "W",
+  "netsTxnStatus": "5",
+  "netsTxnMsg": "OK",
+  "stageRespCode": "1001-00000",
+  "merchantSvcList": [
+    "DD",
+    "CC_SGD",
+    "APS_SGD_DBS_PAYLAH",
+    "APS_SGD_NETSPAY",
+    "APS_SGD_OCBC_PAYANYONE",
+    "APS_SGD_UOB_MIGHTY"
+  ],
+  "paymtSvcInfoList": [
+    {
+      "paymtSvcId": "DD",
+      "netsMid": "877772001",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "CC_SGD",
+      "netsMid": "877772007",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_DBS_PAYLAH",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_NETSPAY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_OCBC_PAYANYONE",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_UOB_MIGHTY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    }
+  ],
+  "txnRand": "57161424307612406",
+  "merchantGrpName": "STYL SOLUTIONS - SOAPI3",
+  "language": "en",
+  "rsaModulus": "e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1",
+  "rsaExponent": "ca17",
+  "ss": "1",
+  "apiKey": "154eb31c-0f72-45bb-9249-84a1036fd1ca",
+  "actionCode": "0",
+  "msgActionCode": "tx01.02"
+}
+
+========================================
+Time     : 2026-04-11 11:35:04
+Endpoint : GeneratePaymentOption
+Stage    : OUTGOING_REQUEST
+Payload  :
+{
+  "netsMid": "UMID_877772003",
+  "submissionMode": "B",
+  "txnAmount": "7946",
+  "merchantTxnRef": "2026_04_11_033502",
+  "merchantTxnDtm": "20260411 11:35:03.478",
+  "netsMidIndicator": null,
+  "paymentType": "SALE",
+  "currencyCode": "SGD",
+  "netsTxnRef": "20260411113504196",
+  "netsTxnDtm": "20260411 11:35:04.541",
+  "merchantTimeZone": "+8:00",
+  "b2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Return",
+  "s2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Callback",
+  "clientType": "W",
+  "netsTxnStatus": "5",
+  "netsTxnMsg": "OK",
+  "stageRespCode": "1001-00000",
+  "merchantSvcList": [
+    "DD",
+    "CC_SGD",
+    "APS_SGD_DBS_PAYLAH",
+    "APS_SGD_NETSPAY",
+    "APS_SGD_OCBC_PAYANYONE",
+    "APS_SGD_UOB_MIGHTY"
+  ],
+  "paymtSvcInfoList": [
+    {
+      "paymtSvcId": "DD",
+      "netsMid": "877772001",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "CC_SGD",
+      "netsMid": "877772007",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_DBS_PAYLAH",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_NETSPAY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_OCBC_PAYANYONE",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_UOB_MIGHTY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    }
+  ],
+  "txnRand": "57161424307612406",
+  "merchantGrpName": "STYL SOLUTIONS - SOAPI3",
+  "language": "en",
+  "rsaModulus": "e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1",
+  "rsaExponent": "ca17",
+  "ss": "1",
+  "apiKey": "154eb31c-0f72-45bb-9249-84a1036fd1ca",
+  "actionCode": "0",
+  "msgActionCode": "tx01.02"
+}
+
+========================================
+Time     : 2026-04-11 11:35:04
+Endpoint : GeneratePaymentOption
+Stage    : HTTP_STATUS
+Payload  :
+Status: 200 OK
+
+========================================
+Time     : 2026-04-11 11:35:04
+Endpoint : GeneratePaymentOption
+Stage    : RESPONSE
+Payload  :
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+	href="https://uat2.enets.sg:443/GW2/css/bootstrap.min.css"
+	rel="stylesheet">
+<script
+	src="https://uat2.enets.sg:443/GW2/js/jquery-3.6.3.min.js"
+	type="text/javascript"></script>
+<script
+	src="https://uat2.enets.sg:443/GW2/js/polyFillForIE.js"
+	type="text/javascript"></script>
+<script type="text/javascript"
+	src="https://uat2.enets.sg:443/GW2/js/apps.js"></script>
+
+<script>
+	var buttonId;
+	var netsMid;
+
+	function setRouteId(pRouteTo, pSelected, pSpecSvc) {
+		document.getElementById('routeTo').value = pRouteTo;
+		buttonId = pSpecSvc;
+		netsMid = pSelected;
+	}
+
+	function submitOnePager() {
+		var jsonStr = document.getElementById('resp1JSON').value;
+		//	alert("jsonString is: " + jsonStr);
+		var routeTo = document.getElementById('routeTo').value;
+		//	alert("route To: " + routeTo)
+		var selectedOption = document.getElementById(buttonId).value;
+		processServiceList(jsonStr, selectedOption, netsMid, routeTo);
+	}
+
+	function clearSelection() {
+		var ele = document.getElementById(buttonId);
+		ele.checked = false;
+	}
+</script>
+
+</head>
+
+<body>
+
+
+
+
+	<div class="container">
+		<form id="testForm" name="testForm" class="form-horizontal">
+			<input type="hidden" id="resp1JSON" name="resp1JSON"
+				value='{
+  "netsMid": "UMID_877772003",
+  "submissionMode": "B",
+  "txnAmount": "7946",
+  "merchantTxnRef": "2026_04_11_033502",
+  "merchantTxnDtm": "20260411 11:35:03.478",
+  "netsMidIndicator": null,
+  "paymentType": "SALE",
+  "currencyCode": "SGD",
+  "netsTxnRef": "20260411113504196",
+  "netsTxnDtm": "20260411 11:35:04.541",
+  "merchantTimeZone": "+8:00",
+  "b2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Return",
+  "s2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Callback",
+  "clientType": "W",
+  "netsTxnStatus": "5",
+  "netsTxnMsg": "OK",
+  "stageRespCode": "1001-00000",
+  "merchantSvcList": [
+    "DD",
+    "CC_SGD",
+    "APS_SGD_DBS_PAYLAH",
+    "APS_SGD_NETSPAY",
+    "APS_SGD_OCBC_PAYANYONE",
+    "APS_SGD_UOB_MIGHTY"
+  ],
+  "paymtSvcInfoList": [
+    {
+      "paymtSvcId": "DD",
+      "netsMid": "877772001",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "CC_SGD",
+      "netsMid": "877772007",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_DBS_PAYLAH",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_NETSPAY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_OCBC_PAYANYONE",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_UOB_MIGHTY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    }
+  ],
+  "txnRand": "57161424307612406",
+  "merchantGrpName": "STYL SOLUTIONS - SOAPI3",
+  "language": "en",
+  "rsaModulus": "e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1",
+  "rsaExponent": "ca17",
+  "ss": "1",
+  "apiKey": "154eb31c-0f72-45bb-9249-84a1036fd1ca",
+  "actionCode": "0",
+  "msgActionCode": "tx01.02"
+}'> <input type="hidden" id="routeTo"
+				name="routeTo" value=''>
+
+
+			<div class="form-group" style="border-bottom: 1px solid #dedede;">
+				<div class="col-sm-8">
+					<h2>Payment Methods</h2>
+				</div>
+			</div>
+
+			
+			
+			
+			
+			
+
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+						
+						
+							
+								
+								
+							
+							
+						
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+
+
+			<div class="form-group" id="formDiv">
+
+				
+				
+					
+						
+							
+
+
+								
+
+									<div class="col-sm-3">
+										<input type="radio" name="paymentOption"
+											style="vertical-align: middle;" id="DD"
+											value="DD"
+											onclick='setRouteId("FEH","877772001","DD")' />
+
+										<img
+											src="https://uat2.enets.sg:443/GW2/image/eNETS_DD.png"
+											width="auto" height="auto">
+									</div>
+								
+
+								
+
+								
+
+							
+						
+						
+					
+				
+					
+						
+							
+
+
+								
+
+								
+									<div class="col-sm-3">
+
+										<input type="radio" name="paymentOption"
+											style="vertical-align: middle;" id="CC_1"
+											value="CC_1"
+											onclick='setRouteId("FEH","877772007","CC_1")' />
+										
+											<img
+												src="https://uat2.enets.sg:443/GW2/image/vm.png"
+												width="auto" height="auto" alt="visamaster">
+										
+
+										
+										
+
+
+										
+									</div>
+
+
+								
+
+								
+
+							
+						
+						
+					
+				
+					
+						
+						
+							
+								<div class="col-sm-3">
+									<input type="radio" name="paymentOption"
+										style="vertical-align: middle;" id="APS_SGD_UOB_MIGHTY"
+										value="APS_SGD_UOB_MIGHTY"
+										onclick='setRouteId("FEH","877772013","APS_SGD_UOB_MIGHTY")' />
+									<img
+										src="https://uat2.enets.sg:443/GW2/image/QRNETS.png"
+										width="45px" height="45px">
+									
+								</div>
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+				
+
+
+			</div>
+
+			<div class="form-group">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-3">
+					<input type="button" id="submitSelectedService"
+						class="btn btn-default" name="submitSelectedService"
+						value="Next >" onclick='submitOnePager()'>
+				</div>
+				<div class="col-sm-3"></div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
+
+========================================
+Time     : 2026-04-11 11:35:04
+Endpoint : PrepareOnePager
+Stage    : RESPONSE
+Payload  :
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+	href="https://uat2.enets.sg:443/GW2/css/bootstrap.min.css"
+	rel="stylesheet">
+<script
+	src="https://uat2.enets.sg:443/GW2/js/jquery-3.6.3.min.js"
+	type="text/javascript"></script>
+<script
+	src="https://uat2.enets.sg:443/GW2/js/polyFillForIE.js"
+	type="text/javascript"></script>
+<script type="text/javascript"
+	src="https://uat2.enets.sg:443/GW2/js/apps.js"></script>
+
+<script>
+	var buttonId;
+	var netsMid;
+
+	function setRouteId(pRouteTo, pSelected, pSpecSvc) {
+		document.getElementById('routeTo').value = pRouteTo;
+		buttonId = pSpecSvc;
+		netsMid = pSelected;
+	}
+
+	function submitOnePager() {
+		var jsonStr = document.getElementById('resp1JSON').value;
+		//	alert("jsonString is: " + jsonStr);
+		var routeTo = document.getElementById('routeTo').value;
+		//	alert("route To: " + routeTo)
+		var selectedOption = document.getElementById(buttonId).value;
+		processServiceList(jsonStr, selectedOption, netsMid, routeTo);
+	}
+
+	function clearSelection() {
+		var ele = document.getElementById(buttonId);
+		ele.checked = false;
+	}
+</script>
+
+</head>
+
+<body>
+
+
+
+
+	<div class="container">
+		<form id="testForm" name="testForm" class="form-horizontal">
+			<input type="hidden" id="resp1JSON" name="resp1JSON"
+				value='{
+  "netsMid": "UMID_877772003",
+  "submissionMode": "B",
+  "txnAmount": "7946",
+  "merchantTxnRef": "2026_04_11_033502",
+  "merchantTxnDtm": "20260411 11:35:03.478",
+  "netsMidIndicator": null,
+  "paymentType": "SALE",
+  "currencyCode": "SGD",
+  "netsTxnRef": "20260411113504196",
+  "netsTxnDtm": "20260411 11:35:04.541",
+  "merchantTimeZone": "+8:00",
+  "b2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Return",
+  "s2sTxnEndURL": "https://weborder.erp.evolut.com.sg/SR/Callback",
+  "clientType": "W",
+  "netsTxnStatus": "5",
+  "netsTxnMsg": "OK",
+  "stageRespCode": "1001-00000",
+  "merchantSvcList": [
+    "DD",
+    "CC_SGD",
+    "APS_SGD_DBS_PAYLAH",
+    "APS_SGD_NETSPAY",
+    "APS_SGD_OCBC_PAYANYONE",
+    "APS_SGD_UOB_MIGHTY"
+  ],
+  "paymtSvcInfoList": [
+    {
+      "paymtSvcId": "DD",
+      "netsMid": "877772001",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "CC_SGD",
+      "netsMid": "877772007",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_DBS_PAYLAH",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_NETSPAY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_OCBC_PAYANYONE",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    },
+    {
+      "paymtSvcId": "APS_SGD_UOB_MIGHTY",
+      "netsMid": "877772013",
+      "tsReqFlag": null
+    }
+  ],
+  "txnRand": "57161424307612406",
+  "merchantGrpName": "STYL SOLUTIONS - SOAPI3",
+  "language": "en",
+  "rsaModulus": "e3bd4c11af7f90a8d89c153e1106ee46039294b09995bda17ae248991fb54d3b29eeaf2f719fb278d1b29a7c7031324c8c377105954c3194146bcab16c2b87b57c7ee9dff042973c24ac3d7f60660fdc1ad45363cd87e9e2b19cb05340e5f2ea3976e52d0f7a1231a35f2bd877ae0180b24071154a187d58eae4f1f272c9aa28ce2ec1b274a440467107ec57385acf18ef89ce41bde78d9ce611b24cf896591116ffb056b4895e4fde41b1ff87bbf12355fcdd6eb01ac0fec6b9a281af3436ba41587be15ea4b6f1f60403dae62953214135b0f55b4cbc0cb017beff21b1930c1837bc68283418497a4a1c516ae751f6aa68445bb07d8e8bae2b09f5581750a1",
+  "rsaExponent": "ca17",
+  "ss": "1",
+  "apiKey": "154eb31c-0f72-45bb-9249-84a1036fd1ca",
+  "actionCode": "0",
+  "msgActionCode": "tx01.02"
+}'> <input type="hidden" id="routeTo"
+				name="routeTo" value=''>
+
+
+			<div class="form-group" style="border-bottom: 1px solid #dedede;">
+				<div class="col-sm-8">
+					<h2>Payment Methods</h2>
+				</div>
+			</div>
+
+			
+			
+			
+			
+			
+
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+						
+						
+							
+								
+								
+							
+							
+						
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+				
+					
+				
+
+				
+
+			
+
+
+			<div class="form-group" id="formDiv">
+
+				
+				
+					
+						
+							
+
+
+								
+
+									<div class="col-sm-3">
+										<input type="radio" name="paymentOption"
+											style="vertical-align: middle;" id="DD"
+											value="DD"
+											onclick='setRouteId("FEH","877772001","DD")' />
+
+										<img
+											src="https://uat2.enets.sg:443/GW2/image/eNETS_DD.png"
+											width="auto" height="auto">
+									</div>
+								
+
+								
+
+								
+
+							
+						
+						
+					
+				
+					
+						
+							
+
+
+								
+
+								
+									<div class="col-sm-3">
+
+										<input type="radio" name="paymentOption"
+											style="vertical-align: middle;" id="CC_1"
+											value="CC_1"
+											onclick='setRouteId("FEH","877772007","CC_1")' />
+										
+											<img
+												src="https://uat2.enets.sg:443/GW2/image/vm.png"
+												width="auto" height="auto" alt="visamaster">
+										
+
+										
+										
+
+
+										
+									</div>
+
+
+								
+
+								
+
+							
+						
+						
+					
+				
+					
+						
+						
+							
+								<div class="col-sm-3">
+									<input type="radio" name="paymentOption"
+										style="vertical-align: middle;" id="APS_SGD_UOB_MIGHTY"
+										value="APS_SGD_UOB_MIGHTY"
+										onclick='setRouteId("FEH","877772013","APS_SGD_UOB_MIGHTY")' />
+									<img
+										src="https://uat2.enets.sg:443/GW2/image/QRNETS.png"
+										width="45px" height="45px">
+									
+								</div>
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+					
+						
+						
+							
+						
+					
+				
+				
+
+
+			</div>
+
+			<div class="form-group">
+				<div class="col-sm-3"></div>
+				<div class="col-sm-3">
+					<input type="button" id="submitSelectedService"
+						class="btn btn-default" name="submitSelectedService"
+						value="Next >" onclick='submitOnePager()'>
+				</div>
+				<div class="col-sm-3"></div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
+
+========================================
+Time     : 2026-04-11 11:35:07
+Endpoint : PostDebitInit
+Stage    : REQUEST
+Payload  :
+{
+  "txnRand": "57161424307612406",
+  "paymentMode": "DD"
+}
+
+========================================
+Time     : 2026-04-11 11:35:07
+Endpoint : PostDebitInit
+Stage    : RESPONSE
+Payload  :
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NETS Payment Page</title>
+<link
+	href="https://uat2.enets.sg:443/GW2/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<style>
+html, body {
+	overflow-x: hidden;
+}
+
+.bankselection {
+	background: #fff;
+}
+
+div.hoverBankSel:hover {
+	background-color: red;
+}
+
+.input-group {
+	display: inline-block;
+}
+
+#inlineradio2 {
+	top: 13px;
+}
+</style>
+
+</head>
+
+<body>
+	<div class="container">
+
+		<form id="form1" name="form1" class="form-horizontal" action="/GW2/debit/init" method="post">
+			<input id="button" name="button" name="button" type="hidden" value=""/>
+			<input type="hidden" name="netsMid" value="UMID_877772003" />
+			<input id="netsTxnRef" name="netsTxnRef" type="hidden" value="20260411113504196" value=""/>
+			<input id="merchantTxnRef" name="merchantTxnRef" type="hidden" value="2026_04_11_033502" value=""/>
+			<input id="txnRand" name="txnRand" type="hidden" value="57161424307612406" value=""/>
+
+			<div class="form-group">
+				
+
+			</div>
+
+
+
+			<div class="form-group" style="border-bottom: 1px solid #dedede;">
+				<div class="col-sm-8">
+					<h4>Payment Methods</h4>
+				</div>
+			</div>
+
+			<div class="form-group" style="margin-left: 10px;">
+				<div class="col-sm-4">
+					<input type="radio" style="vertical-align: text-bottom;"
+						name="eNets" value="" checked="checked"> <img
+						src="https://uat2.enets.sg:443/GW2/image/eNETS_DD.png"
+						width="auto" height="40px">
+				</div>
+			</div>
+
+			<div class="form-group"
+				style="margin-bottom: 1px; margin-left: 10px;">
+				<div class="col-sm-8" style="margin-bottom: -10px;">
+					<p style="color: #9e9c9c; font-size: large;">Please select bank</p>
+				</div>
+			</div>
+
+
+			<div class="form-group" style="margin-left: 15px;">
+			
+				
+				
+				
+
+				
+				
+				
+				
+				
+					
+						
+					
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="814">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_814.gif" width="70px" height="40px" alt="814">
+							</div>
+
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1076">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1076.gif" width="70px" height="40px" alt="1076">
+							</div>
+
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1075">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1075.gif" width="70px" height="40px" alt="1075">
+							</div>
+
+						
+					
+						
+					
+						
+					
+						
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1081">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1081.gif" width="70px" height="40px" alt="1081">
+							</div>
+
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1116">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1116.gif" width="70px" height="40px" alt="1116">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1117">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1117.gif" width="70px" height="40px" alt="1117">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1118">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1118.gif" width="70px" height="40px" alt="1118">
+							</div>
+
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="468">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_468.gif" width="70px" height="40px" alt="468">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="800">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_800.gif" width="70px" height="40px" alt="800">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="156">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_156.gif" width="70px" height="40px" alt="156">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="376">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_376.gif" width="70px" height="40px" alt="376">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="471">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_471.gif" width="70px" height="40px" alt="471">
+							</div>
+
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="697">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_697.gif" width="70px" height="40px" alt="697">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="913">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_913.gif" width="70px" height="40px" alt="913">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1135">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1135.gif" width="70px" height="40px" alt="1135">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1095">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1095.gif" width="70px" height="40px" alt="1095">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="793">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_793.gif" width="70px" height="40px" alt="793">
+							</div>
+
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="1055">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_1055.gif" width="70px" height="40px" alt="1055">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="575">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_575.gif" width="70px" height="40px" alt="575">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="152">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_152.gif" width="70px" height="40px" alt="152">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="578">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_578.gif" width="70px" height="40px" alt="578">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="579">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_579.gif" width="70px" height="40px" alt="579">
+							</div>
+
+						
+					
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="160">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_160.gif" width="70px" height="40px" alt="160">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="733">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_733.gif" width="70px" height="40px" alt="733">
+							</div>
+
+						
+					
+						
+
+							<div class="col-sm-3" style="margin-bottom: 5px; margin-top: 15px; padding: 5px;">
+								<input type="radio" style="vertical-align: middle" name="selBankID" id="selBankID" value="873">
+								<img src="https://uat2.enets.sg:443/GW2/image/eNETS_DD_873.gif" width="70px" height="40px" alt="873">
+							</div>
+
+						
+					
+					
+				
+				
+				
+				
+				
+				
+				
+
+				
+
+			</div>
+
+
+
+			<div class="form-group" style="margin-left: 15px;">
+			<div class="col-sm-3"></div>
+				<div class="col-md-3">
+					<button type="button" class="btn btn-default" id="btnSubmit"
+						style="margin-left: -10px; width: 100px;"
+						onclick='onBtnClick("submit")'>Submit</button>
+					<button type="button" class="btn btn-default" id="btnCancel"
+						style="margin-left: 10px; width: 100px;"
+						onclick='onBtnClick("cancel")'>Back</button>
+				</div>
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3"></div>
+			</div>
+	</div>
+	</form>
+
+	<samp style="font-family: inherit;"> Important Notice: Please note the transaction information should you need to make any queries on this transaction. </samp>
+	</div>
+	<script>
+		console.log("in bankSel");
+		console.log(document);
+
+		function BanEnterKey() {
+			if (window.event.keyCode == 13) {
+				return false;
+			} else {
+				return true;
+			}
+		}
+
+		function microsoftKeyPress() {
+			if (window.event.keyCode == 13) {
+				// alert('Using IE, right? User pressed Enter key, right?');
+				return checkFields();
+			} else {
+				return false;
+			}
+		}
+
+		// XSS fix for PT-M06
+	//	function frameBuster() { Fortfy fix
+			/* Fix that would allow framing: SHINE [Incident ID: 203821]*/
+	//		if (top != self)
+	//			top.location = encodeURI(self.location);
+
+	//	}
+
+		function onBtnClick(buttonId) {
+			var resultPath = 'https://uat2.enets.sg:443/GW2';
+			
+			var ddActionPath = resultPath + "/debit/bankIdSubmitForm";
+			//validate
+			if (buttonId == "submit") {
+  				var radios = document.getElementsByName('selBankID');
+				var isRadioBtnSel = false;
+ 				for (var i = 0; i < radios.length; i++) {
+        			if (radios[i].checked) {
+       					// alert("Selected Value = " + radios[i].value);
+        				isRadioBtnSel = true; // checked
+   					 }//if
+				}//for
+			if(!isRadioBtnSel){
+				alert("Please select a bank.");
+				return false;
+			}
+		}
+
+			document.getElementById("btnCancel").style.display = "none";
+			document.getElementById("button").value = buttonId;
+			document.getElementById("form1").action = ddActionPath;
+			//
+			console.log(document.getElementById("form1"));
+			document.getElementById("form1").submit();
+		}
+	</script>
+</body>
+</html>
+

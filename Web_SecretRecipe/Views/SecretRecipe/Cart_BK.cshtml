@@ -1,0 +1,2650 @@
+﻿
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js">
+ <!--<![endif]-->
+<head>
+
+    <!-- Basic page needs ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+    <link rel="icon" type="image/x-icon" href="~/img/SR_LOGO.png" sizes="106x104">
+
+    <!-- Title and description ================================================== -->
+    <title>Cart - Secret Recipe</title>
+    <!-- Social meta ================================================== -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cake Information">
+    <meta property="og:url" content="https://www.secretrecipe.com.sg/pages/cake-information">
+
+    <meta property="og:image" content="https://cdn.store-assets.com/s/896/f/13567861.jpg">
+    <meta property="og:image:secure_url" content="https://cdn.store-assets.com/s/896/f/13567861.jpg">
+
+
+
+    <meta property="og:description" content="Secret Recipe is your go-to choice for halal-certified cakes in Singapore. We offer islandwide delivery services, so everyone can savor our delicious sweet treats wherever they are. Secret Recipe also offers a wide range of food in our casual dining restaurant.">
+    <meta property="og:site_name" content="Secret Recipe">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+
+    <!-- Helpers ================================================== -->
+    <link rel="canonical" href="https://www.secretrecipe.com.sg/pages/cake-information">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#ED1B25">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+    <script src="~/js/SecretRecipe.js" asp-append-version="true"></script>
+
+    <!-- Header hook for plugins ================================================== -->
+    <!-- ScriptTags -->
+    @* <script>window.__st={'p': 'page', 'cid': ''};</script><script src='/assets/events.js'></script><script>(function(){function asyncLoad(){var urls=['/assets/traffic.js?v=1','https://apps.easystore.co/social-media-share/script.js?shop=secretrecipe2.easy.co','https://apps.easystore.co/facebook-login/script.js?shop=secretrecipe2.easy.co','https://chimpstatic.com/mcjs-connected/js/users/24e0cfc4189994a568db30312/7b2e6b904b995018df4236300.js','https://apps.easystore.co/snow-fall/script.js?shop=secretrecipe2.easy.co&t=1731567200','https://smartarget.online/loader.js?type=int&u=6a9f13940a514b1ee69ae59004598ff827295e8a&source=easystore_exit_popup'];for(var i=0;i<urls.length;i++){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=urls[i];var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);}}window.attachEvent ? window.attachEvent('onload', asyncLoad) : window.addEventListener('load', asyncLoad, false);})();</script>
+ *@<!-- /ScriptTags -->
+
+
+
+    @*   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> *@
+
+    <!-- JS Scripts -->
+    @*     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> *@
+
+
+    <link rel="preload" href="https://store-themes.easystore.co/896/themes/49034/assets/component-cart-notification.css?v1.1?t=1731603610" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    @*     <link rel="stylesheet" type="text/css" href="css/vendor.css">
+ *@    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', '', 'auto','myTracker');
+        ga('myTracker.send', 'pageview');
+    </script>
+@*     <link rel="stylesheet" href="https://store-themes.easystore.co/896/themes/49034/assets/component-cart.css?t=1733504410" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://store-themes.easystore.co/896/themes/49034/assets/component-cart-items.css?t=1733504410" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://store-themes.easystore.co/896/themes/49034/assets/component-totals.css?t=1733504410" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://store-themes.easystore.co/896/themes/49034/assets/component-price.css?t=1733504410" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://store-themes.easystore.co/896/themes/49034/assets/component-discounts.css?t=1733504410" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://store-themes.easystore.co/896/themes/49034/assets/component-loading-overlay.css?t=1733504410" as="style" onload="this.onload=null;this.rel='stylesheet'"> *@
+@*     <script src="/assets/storefront.js?id=5b96e48c778f63472284" type="text/javascript"></script>
+ *@
+
+    <!-- CSS ================================================== -->
+@*         <link rel="stylesheet" type="text/css" href="~/css/mainpage.css" asp-append-version="true">
+ *@              
+     <link rel="stylesheet" type="text/css" href="~/css/Cart.css" asp-append-version="true">
+     <link rel="stylesheet" type="text/css" href="~/css/promotion.css" asp-append-version="true">
+     <link rel="stylesheet" type="text/css" href="~/css/site.css" asp-append-version="true">
+     <link rel="stylesheet" type="text/css" href="~/css/CartNotification.css" asp-append-version="true">
+     <link rel="stylesheet" type="text/css" href="~/css/footer.css" asp-append-version="true">
+
+    <style>
+
+        /* :root {
+            --font-body-family: 'Lato', sans-serif;
+            --font-body-style: normal;
+            --font-body-weight: 500;
+            --font-heading-family: 'Lobster', display;
+            --font-heading-style: normal;
+            --font-heading-weight: 700;
+            --color-heading-text: 18,18,18;
+            --color-base-text: 18,18,18;
+            --color-base-background-1: 255,255,255;
+            --color-base-background-2: 255,255,255;
+            --color-base-solid-button-labels: 255,255,255;
+            --color-base-outline-button-labels: 18,18,18;
+            --color-base-accent-1: 237,27,37;
+            --color-base-accent-2: 237,27,37;
+            --payment-terms-background-color: 255,255,255;
+            --gradient-base-background-1: 255,255,255;
+            --gradient-base-background-2: 255,255,255;
+            --gradient-base-accent-1: 237,27,37;
+            --gradient-base-accent-2: 237,27,37;
+            --page-width: 140rem;
+        } */
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        html {
+            box-sizing: border-box;
+            font-size: 62.5%;
+            height: 100%;
+        }
+
+
+        /* Ensure table uses full grid with borders */
+        .table-wrapper table {
+            border-collapse: collapse; /* Ensures borders don't double */
+            width: 100%; /* Full width of container */
+            margin: 10px 0; /* Add some spacing above/below table */
+        }
+
+        .table-wrapper th,
+        .table-wrapper td {
+            border: 1px solid #ddd; /* Add borders to all cells */
+            text-align: left; /* Align text to the left */
+            padding: 8px; /* Add some padding for readability */
+            vertical-align: middle; /* Align vertically */
+        }
+
+        .table-wrapper th {
+            background-color: #f2f2f2; /* Light background for headers */
+            font-weight: bold;
+        }
+
+        .table-wrapper tr:nth-child(even) {
+            background-color: #f9f9f9; /* Add zebra stripe for even rows */
+        }
+
+        .table-wrapper tr:nth-child(odd) {
+            background-color: #fff; /* Explicitly set background for odd rows */
+        }
+
+        .table-wrapper tbody tr:hover {
+            background-color: #ddd !important; /* Ensure hover effect works */
+        }
+
+        slider-announcement-bar-app {
+            display: block;
+            text-align: center;
+            margin: 0px;
+            padding: 6px 10px;
+            border-top: 1px dashed transparent;
+            border-bottom: 1px dashed transparent;
+            width: 100%;
+        }
+
+            slider-announcement-bar-app ul::-webkit-scrollbar {
+                height: 0.4rem;
+                width: 0.4rem;
+                display: none;
+            }
+
+            slider-announcement-bar-app ul {
+                position: relative;
+                display: flex;
+                overflow-x: auto;
+                -ms-overflow-style: none;
+                /* IE 11 */
+                scrollbar-width: none;
+                /* Firefox 64 */
+                scroll-snap-type: x mandatory;
+                scroll-behavior: smooth;
+                /* scroll-padding-left: 1rem; */
+                -webkit-overflow-scrolling: touch;
+                margin-bottom: 0;
+                padding: 0;
+                list-style: none;
+                align-items: center;
+            }
+
+                slider-announcement-bar-app ul li {
+                    width: 100vw;
+                    scroll-snap-align: start;
+                    flex-shrink: 0;
+                }
+
+                
+    </style>
+
+    @* <link href="https://store-themes.easystore.co/896/themes/49034/assets/base.css?t=1731603610" rel="stylesheet" type="text/css" media="screen" /> *@
+
+
+
+
+    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+</head>
+
+<body id="secret-recipe" class="template-index" onload="renderCart()">
+    <!-- Snippet:global/body_start: Announcement Bar -->
+    <style type="text/css">
+        /* body {
+            background-position: top 45px center;
+            font-size: 1.6rem;
+        } */
+
+        div#announcement-bar-top {
+            height: 45px;
+        }
+
+        span .announcement-close-button {
+            text-align: center;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: inline-block;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #announcementBar_countdown:empty {
+            display: none;
+        }
+
+        .announcementBar_timer {
+            margin: 5px 0px;
+        }
+
+            .announcementBar_timer.style_1,
+            .announcementBar_timer.style_2 {
+                display: -webkit-inline-flex;
+                display: -moz-inline-flex;
+                display: -ms-inline-flex;
+                display: -o-inline-flex;
+                display: inline-flex;
+                align-items: center;
+                padding: 5px 8px;
+                margin: 3px 0px 3px 10px;
+                border-radius: 8px;
+                font-weight: bold;
+            }
+
+                .announcementBar_timer.style_1 > div,
+                .announcementBar_timer.style_2 > div {
+                    margin: 0 5px;
+                    line-height: 1;
+                }
+
+                .announcementBar_timer.style_1 small,
+                .announcementBar_timer.style_2 small {
+                    display: block;
+                    font-size: 55%;
+                    line-height: 1;
+                }
+
+            .announcementBar_timer.style_2 {
+                flex-direction: row;
+            }
+
+                .announcementBar_timer.style_2 > div {
+                    position: relative;
+                }
+
+                    .announcementBar_timer.style_2 > div:not(:last-child):after {
+                        position: absolute;
+                        content: ':';
+                        top: 0;
+                        right: 0;
+                        margin-right: -7px;
+                    }
+
+            .announcementBar_timer.style_3 {
+                display: -webkit-inline-flex;
+                display: -moz-inline-flex;
+                display: -ms-inline-flex;
+                display: -o-inline-flex;
+                display: inline-flex;
+                align-items: center;
+                border-radius: 5px;
+                padding: 5px 5px;
+                margin-left: 10px;
+                font-weight: bold;
+            }
+
+                .announcementBar_timer.style_3 > div {
+                    margin: 0 3px;
+                    line-height: 1;
+                }
+
+                .announcementBar_timer.style_3 small {
+                    font-weight: bold;
+                    line-height: 1.1;
+                    font-size: 65%;
+                }
+
+        .announcement-close-button {
+            position: relative;
+            width: 24px;
+            height: 24px;
+            opacity: 1;
+            background: #000;
+            border-radius: 50%;
+            cursor: pointer;
+            top: 30%;
+        }
+
+            .announcement-close-button:hover {
+                opacity: 0.6;
+            }
+
+            .announcement-close-button:before,
+            .announcement-close-button:after {
+                position: absolute;
+                left: 11px;
+                top: 5px;
+                content: ' ';
+                height: 14px;
+                width: 2px;
+                background-color: #fff;
+                border-radius: 3px;
+            }
+
+            .announcement-close-button:before {
+                transform: rotate(45deg);
+            }
+
+            .announcement-close-button:after {
+                transform: rotate(-45deg);
+            }
+
+        .announcement-bar-button {
+            padding: 4px 8px;
+            vertical-align: baseline;
+            border-radius: 5px;
+            margin-left: 10px;
+            opacity: 1;
+            line-height: 1.1;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 500;
+        }
+
+            .announcement-bar-button:hover {
+                opacity: 0.8;
+            }
+
+        .announcement-bar-direction-button {
+            cursor: pointer;
+            padding: 0px 8px;
+        }
+
+            .announcement-bar-direction-button:hover {
+                opacity: 0.8;
+            }
+
+        slider-announcement-bar-app {
+            display: block;
+            text-align: center;
+            margin: 0px;
+            padding: 6px 10px;
+            border-top: 1px dashed transparent;
+            border-bottom: 1px dashed transparent;
+            width: 100%;
+        }
+
+            slider-announcement-bar-app ul::-webkit-scrollbar {
+                height: 0.4rem;
+                width: 0.4rem;
+                display: none;
+            }
+
+            slider-announcement-bar-app ul {
+                position: relative;
+                display: flex;
+                overflow-x: auto;
+                -ms-overflow-style: none;
+                /* IE 11 */
+                scrollbar-width: none;
+                /* Firefox 64 */
+                scroll-snap-type: x mandatory;
+                scroll-behavior: smooth;
+                /* scroll-padding-left: 1rem; */
+                -webkit-overflow-scrolling: touch;
+                margin-bottom: 0;
+                padding: 0;
+                list-style: none;
+                align-items: center;
+            }
+
+                slider-announcement-bar-app ul li {
+                    width: 100vw;
+                    scroll-snap-align: start;
+                    flex-shrink: 0;
+                }
+
+        .splide__container {
+            box-sizing: border-box;
+            position: relative
+        }
+
+        .splide__list {
+            backface-visibility: hidden;
+            display: -ms-flexbox;
+            display: flex;
+            height: 100%;
+            margin: 0 !important;
+            padding: 0 !important
+        }
+
+        .splide.is-initialized:not(.is-active) .splide__list {
+            display: block
+        }
+
+        .splide__pagination {
+            -ms-flex-align: center;
+            align-items: center;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin: 0;
+            pointer-events: none
+        }
+
+            .splide__pagination li {
+                display: inline-block;
+                line-height: 1;
+                list-style-type: none;
+                margin: 0;
+                pointer-events: auto
+            }
+
+        .splide:not(.is-overflow) .splide__pagination {
+            display: none
+        }
+
+        .splide__progress__bar {
+            width: 0
+        }
+
+        .splide {
+            position: relative;
+            visibility: hidden
+        }
+
+            .splide.is-initialized, .splide.is-rendered {
+                visibility: visible
+            }
+
+        .splide__slide {
+            backface-visibility: hidden;
+            box-sizing: border-box;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            list-style-type: none !important;
+            margin: 0;
+            position: relative
+        }
+
+            .splide__slide img {
+                vertical-align: bottom
+            }
+
+        .splide__spinner {
+            animation: splide-loading 1s linear infinite;
+            border: 2px solid #999;
+            border-left-color: transparent;
+            border-radius: 50%;
+            bottom: 0;
+            contain: strict;
+            display: inline-block;
+            height: 20px;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 20px
+        }
+
+        .splide__sr {
+            clip: rect(0 0 0 0);
+            border: 0;
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px
+        }
+
+        .splide__toggle.is-active .splide__toggle__play, .splide__toggle__pause {
+            display: none
+        }
+
+        .splide__toggle.is-active .splide__toggle__pause {
+            display: inline
+        }
+
+        .splide__track {
+            overflow: hidden;
+            position: relative;
+            z-index: 0
+        }
+
+
+
+        .splide__track--draggable {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+
+        .splide__track--fade > .splide__list > .splide__slide {
+            margin: 0 !important;
+            opacity: 0;
+            z-index: 0
+        }
+
+            .splide__track--fade > .splide__list > .splide__slide.is-active {
+                opacity: 1;
+                z-index: 1
+            }
+
+        .splide--rtl {
+            direction: rtl
+        }
+
+        .splide__track--ttb > .splide__list {
+            display: block
+        }
+
+        .splide__arrow {
+            -ms-flex-align: center;
+            align-items: center;
+            background: #ccc;
+            border: 0;
+            border-radius: 50%;
+            cursor: pointer;
+            display: -ms-flexbox;
+            display: flex;
+            height: 2em;
+            -ms-flex-pack: center;
+            justify-content: center;
+            opacity: .7;
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2em;
+            z-index: 1
+        }
+
+            .splide__arrow svg {
+                fill: #000;
+                height: 1.2em;
+                width: 1.2em
+            }
+
+            .splide__arrow:hover:not(:disabled) {
+                opacity: .9
+            }
+
+            .splide__arrow:disabled {
+                opacity: .3
+            }
+
+            .splide__arrow:focus-visible {
+                outline: 3px solid #0bf;
+                outline-offset: 3px
+            }
+
+        .splide__arrow--prev {
+            left: 1em
+        }
+
+            .splide__arrow--prev svg {
+                transform: scaleX(-1)
+            }
+
+        .splide__arrow--next {
+            right: 1em
+        }
+
+        .splide.is-focus-in .splide__arrow:focus {
+            outline: 3px solid #0bf;
+            outline-offset: 3px
+        }
+
+        .splide__pagination {
+            bottom: .5em;
+            left: 0;
+            padding: 0 1em;
+            position: absolute;
+            right: 0;
+            z-index: 1
+        }
+
+        .splide__pagination__page {
+            background: #ccc;
+            border: 0;
+            border-radius: 50%;
+            display: inline-block;
+            height: 8px;
+            margin: 3px;
+            opacity: .7;
+            padding: 0;
+            position: relative;
+            transition: transform .2s linear;
+            width: 8px
+        }
+
+            .splide__pagination__page.is-active {
+                background: #fff;
+                transform: scale(1.4);
+                z-index: 1
+            }
+
+            .splide__pagination__page:hover {
+                cursor: pointer;
+                opacity: .9
+            }
+
+            .splide__pagination__page:focus-visible {
+                outline: 3px solid #0bf;
+                outline-offset: 3px
+            }
+
+        .splide.is-focus-in .splide__pagination__page:focus {
+            outline: 3px solid #0bf;
+            outline-offset: 3px
+        }
+
+        .splide__progress__bar {
+            background: #ccc;
+            height: 3px
+        }
+
+        .splide__slide {
+            -webkit-tap-highlight-color: rgba(0,0,0,0)
+        }
+
+            .splide__slide:focus {
+                outline: 0
+            }
+
+
+
+        .splide.is-focus-in .splide__track > .splide__list > .splide__slide:focus {
+            border-color: #0bf
+        }
+
+
+        .splide__toggle {
+            cursor: pointer
+        }
+
+            .splide__toggle:focus-visible {
+                outline: 3px solid #0bf;
+                outline-offset: 3px
+            }
+
+        .splide.is-focus-in .splide__toggle:focus {
+            outline: 3px solid #0bf;
+            outline-offset: 3px
+        }
+
+        .splide__track--nav > .splide__list > .splide__slide {
+            border: 3px solid transparent;
+            cursor: pointer
+        }
+
+            .splide__track--nav > .splide__list > .splide__slide.is-active {
+                border: 3px solid #000
+            }
+
+        .splide__arrows--rtl .splide__arrow--prev {
+            left: auto;
+            right: 1em
+        }
+
+            .splide__arrows--rtl .splide__arrow--prev svg {
+                transform: scaleX(1)
+            }
+
+        .splide__arrows--rtl .splide__arrow--next {
+            left: 1em;
+            right: auto
+        }
+
+            .splide__arrows--rtl .splide__arrow--next svg {
+                transform: scaleX(-1)
+            }
+
+        .splide__arrows--ttb .splide__arrow {
+            left: 50%;
+            transform: translate(-50%)
+        }
+
+        .splide__arrows--ttb .splide__arrow--prev {
+            top: 1em
+        }
+
+            .splide__arrows--ttb .splide__arrow--prev svg {
+                transform: rotate(-90deg)
+            }
+
+        .splide__arrows--ttb .splide__arrow--next {
+            bottom: 1em;
+            top: auto
+        }
+
+            .splide__arrows--ttb .splide__arrow--next svg {
+                transform: rotate(90deg)
+            }
+
+        .splide__pagination--ttb {
+            bottom: 0;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            left: auto;
+            padding: 1em 0;
+            right: .5em;
+            top: 0
+        }
+
+    </style>
+    <!-- Full-page logo animation -->
+    <div class="full-page-overlay" style="background-color:#FFFCFA;">
+        <img src="https://cdn.store-assets.com/s/896/f/10594755.png"
+             class="logo"
+             alt="Secret Recipe Logo">
+    </div>
+
+    <!-- Content of the page -->
+    @*  <div style="text-align: center; margin-top: 50px;">
+        <h1>Welcome to the Secret Recipe</h1>
+        <p>Explore our amazing products and recipes.</p>
+    </div> *@
+
+    <script>
+        // Optional: Trigger animation only on "new tab" or page load
+        document.addEventListener("DOMContentLoaded", function() {
+            // Animation logic can be enhanced here
+            console.log("Animation Started");
+        });
+    </script>
+    <input type="hidden" id="total_announcement_left" name="total_announcement_left" value="1">
+    <input type="hidden" id="locale" name="locale" value="en_US">
+    <slider-announcement-bar-app id="announcement-bar" name="announcement-bar">
+
+        <div style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0px 0px;
+                        border-top: 0px;
+                        border-bottom: 0px;
+                        border-color: transparent;
+                        ">
+            <div style="height: 24px;">
+            </div>
+            <ul style="flex-grow: 2; margin: 0px;">
+                <li id="announcement_bar_0" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0px; width: 100%; word-wrap: break-word; color : white;">
+                    
+                </li>
+            </ul>
+            <div style="display: flex;">
+                <span id="announcement-close-button" name="announcement-close-button" class="announcement-close-button" style="margin-right: 10px;"></span>
+            </div>
+        </div>
+    </slider-announcement-bar-app>
+    <script>
+        document.getElementById('announcement-close-button').addEventListener('click', function () {
+            const announcementCloseButton = document.getElementById('announcement-bar');
+            announcementCloseButton.style.display == 'none';
+        });
+
+
+        const announcementBarAppJS = function($) {
+
+          $('#announcement-close-button').on('click', function() {
+            $('#announcement-bar, #announcement-bar-top').hide();
+            $('#easystore-section-header, .sticky-topbar').css('top', '');
+          });
+        }
+
+        function showOrHide(total_announcement_left) {
+          if (total_announcement_left <= 1) {
+            $("#previous-announcement-bar-button,#next-announcement-bar-button").hide();
+          } else {
+            $("#previous-announcement-bar-button,#next-announcement-bar-button").show();
+          }
+
+          if (total_announcement_left == 0) {
+            $("#announcement-close-button").hide();
+            $("#announcement-bar").hide();
+            $('#announcement-bar-top').hide();
+          }
+        };
+
+
+           $(function() {
+          var is_top_enabled =  0;
+
+          const loadScript = function(url, callback) {
+            const script = document.createElement("script");
+            script.type = "text/javascript";
+            // If the browser is Internet Explorer.
+            if (script.readyState) {
+              script.onreadystatechange = function() {
+                if (script.readyState == "loaded" || script.readyState == "complete") {
+                  script.onreadystatechange = null;
+                  callback();
+                }
+              };
+              // For any other browser.
+            } else {
+              script.onload = function() {
+                callback();
+              };
+            }
+            script.src = url;
+            document.getElementsByTagName("head")[0].appendChild(script);
+          };
+
+
+
+          if (typeof jQuery === 'undefined') {
+            loadScript('//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js', function() {
+              jQuery = jQuery.noConflict(true);
+              announcementBarAppJS(jQuery);
+            });
+          } else {
+            announcementBarAppJS(jQuery);
+          }
+
+
+
+          if(is_top_enabled){
+            // Prevent announcement bar block header
+            setTimeout(()=>{
+              $('#easystore-section-header, .sticky-topbar').css('top', $('#announcement-bar').height()+'px');
+            }, 2000);
+          }
+        });
+
+        setInterval(function() {
+          const total_announcement = "1"
+          var total_announcement_left = $("#total_announcement_left").val();
+
+          for (let i = 0; i <= total_announcement; i++) {
+            const startDate = new Date();
+            const endDateStr = $("#expired_at_" + i).val();
+            const endDate = endDateStr == undefined ? new Date() : new Date(endDateStr.replace(/-/g, "/"));
+            const seconds = (endDate.getTime() - startDate.getTime()) / 1000;
+
+            const days = parseInt(seconds / 86400);
+            const hours = parseInt((seconds % 86400) / 3600);
+            const mins = parseInt((seconds % 86400 % 3600) / 60);
+            const secs = parseInt((seconds % 86400 % 3600) % 60);
+
+            // use to translate countdown unit
+            // (translate based on the preferred language when save announcement bar setting)
+            String.prototype.translate = function() {
+              try {
+                if ($("#locale").val() == "zh_TW") {
+                  if (this.toString() === 'day') {
+                    return "天";
+                  }
+                  if (this.toString() === 'hour') {
+                    return "小時";
+                  }
+                  if (this.toString() === 'min') {
+                    return "分鐘";
+                  }
+                  if (this.toString() === 'sec') {
+                    return "秒";
+                  }
+                } else {
+                  if (this.toString() === 'day') {
+                    if (days > 0) {
+                      return "Days";
+                    } else {
+                      return "Day";
+                    }
+                  } else if (this.toString() === 'hour') {
+                    if (hours > 0) {
+                      return "Hours";
+                    } else {
+                      return "Hour";
+                    }
+                  } else if (this.toString() === 'min') {
+                    if (mins > 0) {
+                      return "Mins";
+                    } else {
+                      return "Min";
+                    }
+                  } else if (this.toString() === 'sec') {
+                    if (secs > 0) {
+                      return "Secs";
+                    } else {
+                      return "Sec";
+                    }
+                  }
+                }
+              } catch (error) {
+                console.log("Some errors heres", error);
+              }
+            };
+
+            const announcementBar_countdown = document.getElementById("announcementBar_countdown_" + i);
+            if (announcementBar_countdown && seconds > 0) {
+
+              $(announcementBar_countdown).show()
+              announcementBar_countdown.innerHTML = `
+                <div>
+                  ${days} <small>${'day'.translate()}</small>
+                </div>
+                <div>
+                  ${hours} <small>${'hour'.translate()}</small>
+                </div>
+                <div>
+                  ${mins} <small>${'min'.translate()}</small>
+                </div>
+                <div>
+                  ${secs} <small>${'sec'.translate()}</small>
+                </div>
+              `;
+
+
+            } else if (announcementBar_countdown && seconds <= 0) {
+              $("#announcement_bar_" + i).remove();
+              total_announcement_left = total_announcement_left - 1;
+              $("#total_announcement_left").val(total_announcement_left);
+            }
+          }
+
+          showOrHide(total_announcement_left);
+        }, 1000);
+
+
+
+
+        // let annoucementBarAutoMoveInterval = '';
+        // class AnnouncementBarAppSlider extends HTMLElement {
+        //   constructor() {
+        //     super();
+        //     this.slider = this.querySelector('ul');
+        //     this.sliderItems = this.querySelectorAll('li');
+        //     this.prevButton = this.querySelector('a[name="previous"]');
+        //     this.nextButton = this.querySelector('a[name="next"]');
+
+        //     if (!this.slider || !this.nextButton) return;
+
+        //     const resizeObserver = new ResizeObserver(entries => this.initPages());
+        //     resizeObserver.observe(this.slider);
+
+        //     this.slider.addEventListener('scroll', this.update.bind(this));
+        //     this.prevButton.addEventListener('click', this.onButtonClick.bind(this));
+        //     this.nextButton.addEventListener('click', this.onButtonClick.bind(this));
+
+
+        //   }
+
+        //   initPages() {
+        //     const sliderItemsToShow = Array.from(this.sliderItems).filter(element => element.clientWidth > 0);
+        //     this.sliderLastItem = sliderItemsToShow[sliderItemsToShow.length - 1];
+        //     if (sliderItemsToShow.length === 0) return;
+        //     this.slidesPerPage = Math.floor(this.slider.clientWidth / sliderItemsToShow[0].clientWidth);
+        //     this.totalPages = sliderItemsToShow.length - this.slidesPerPage + 1;
+        //     this.update();
+        //     let self = this
+        //     var total_announcement_left = $("#total_announcement_left").val();
+        //     annoucementBarAutoMoveInterval = setInterval(function() {
+        //       if (total_announcement_left > 1) {
+        //         self.moveSlide('next')
+        //       }
+        //     }, 5000)
+        //   }
+
+        //   update() {
+        //     this.currentPage = Math.round(this.slider.scrollLeft / this.sliderLastItem.clientWidth) + 1;
+        //   }
+
+        //   onButtonClick(event) {
+        //     event.preventDefault();
+        //     let self = this;
+        //     self.moveSlide(event.currentTarget.name);
+        //   }
+
+
+        //   moveSlide(move_to) {
+
+        //     clearInterval(annoucementBarAutoMoveInterval);
+        //     let self = this;
+        //     annoucementBarAutoMoveInterval = setInterval(function() {
+        //       self.moveSlide('next');
+        //     }, 5000)
+
+        //     if (move_to === 'previous' && this.currentPage === 1) {
+        //       this.slider.scrollTo({
+        //         left: this.sliderLastItem.clientWidth * (this.totalPages - 1)
+        //       });
+        //     } else if (move_to === 'next' && this.currentPage === this.totalPages) {
+        //       this.slider.scrollTo({
+        //         left: 0
+        //       });
+        //     } else {
+        //       const slideScrollPosition = move_to === 'next' ? this.slider.scrollLeft + this.sliderLastItem
+        //         .clientWidth : this.slider.scrollLeft - this.sliderLastItem.clientWidth;
+        //       this.slider.scrollTo({
+        //         left: slideScrollPosition
+        //       });
+        //     }
+        //   }
+
+        // }
+
+        // customElements.define('slider-announcement-bar-app', AnnouncementBarAppSlider);
+
+    </script>
+    <!-- /Snippet -->
+    <!-- Snippet:global/body_start: Console Extension -->
+    <div id='es_console' style='display: none;'>896</div>
+    <!-- /Snippet -->
+    <style>
+        header {
+            --logo-width: 195px;
+        }
+
+        .header-wrapper,
+        .header-wrapper .list-menu--disclosure,
+        .header-wrapper .search-modal {
+             background-color: #FFFCFA;;
+        }
+
+            .header-wrapper .search-modal .field__input {
+                background-color: rgb(var(--color-background));
+            }
+
+            .header-wrapper summary .icon-caret,
+            .header-wrapper .header__menu-item a,
+            .header-wrapper .list-menu__item,
+            .header-wrapper .link--text {
+                color: #000000;
+            }
+
+        .search-modal__form {
+            position: relative;
+        }
+
+
+        .dropdown-item {
+            padding: 0.4rem 2rem;
+            cursor: pointer;
+            line-height: 1.4;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+            .dropdown-item:hover {
+                background-color: #f3f3f3;
+            }
+
+        .search__input.is-focus {
+            border-radius: 15px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border: 1px solid rgba(var(--color-foreground), 1);
+            border-bottom: none;
+            box-shadow: none;
+        }
+
+        .clear-all {
+            text-align: right;
+            padding: 0 2rem 0.2rem;
+            line-height: 1;
+            font-size: 70%;
+            margin-bottom: -2px;
+        }
+
+            .clear-all:hover {
+                background-color: #fff;
+            }
+
+        .search-input-focus .easystore-section-header-hidden {
+            transform: none;
+        }
+
+        .menu {
+            position: relative;
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 10px;
+            background: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            /*             padding: 15px;
+         */ display: none;
+            width: 200px;
+            border-radius: 5px;
+            z-index: 100;
+            text-align: left;
+        }
+       
+        .menu:hover .dropdown {
+            display: block;
+        }
+
+       
+
+        .menu:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown-content {
+            display: flex;
+            gap: 20px; /* Adjust the spacing between sections */
+            padding: 10px;
+            width: 400px;
+        }
+
+        .dropdown-section {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin-bottom: 0;
+            padding: 2%;
+        }
+
+            .dropdown-section strong {
+                display: block;
+                color: #a68a64;
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+
+            .dropdown-section a,
+            .dropdown a {
+                display: block;
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                padding: 6px 0;
+            }
+
+                .dropdown a:hover,
+                .dropdown-section a:hover {
+                    color: red;
+                }
+
+        .dropdown-toggle::after {
+            display: inline-block;
+            margin-left: .255em;
+            vertical-align: .255em;
+            content: "";
+            border-top: .3em solid;
+            border-right: .3em solid transparent;
+            border-bottom: 0;
+            border-left: .3em solid transparent;
+        }
+
+        #profileDropDown {
+            position: absolute;
+            top: 100%;
+            left: -50px;
+            background: white;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            width: 180px;
+            border-radius: 8px;
+            z-index: 100;
+            text-align: left;
+            padding: 8px 0;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        /* Dropdown menu container should stack items vertically */
+        #profileDropdownMenu {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0 12px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+            /* Each dropdown item (assuming links or buttons) */
+            #profileDropdownMenu a,
+            #profileDropdownMenu button {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                text-align: left;
+                background: none;
+                border: none;
+                font-size: 15px;
+                color: #333;
+                text-decoration: none;
+                border-radius: 4px;
+                transition: background 0.2s ease;
+                cursor: pointer;
+            }
+
+                #profileDropdownMenu a:hover,
+                #profileDropdownMenu button:hover {
+                    background-color: #f0f0f0;
+                    color: red;
+                }
+
+        /* Dropdown account container */
+        #dropdownAccount {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0;
+            width: 100%;
+        }
+
+        c
+
+    </style>
+    @*
+        <link rel="preload" href="https://store-themes.easystore.co/896/themes/49034/assets/section-header.css?t=1731603610" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="https://store-themes.easystore.co/896/themes/49034/assets/component-list-menu.css?t=1731603610" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="https://store-themes.easystore.co/896/themes/49034/assets/component-menu-drawer.css?t=1731603610" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <script src="https://store-themes.easystore.co/896/themes/49034/assets/cart-notification.js?t=1731603610" defer="defer"></script>
+        <script src="https://store-themes.easystore.co/896/themes/49034/assets/details-modal.js?t=1731603610" defer="defer"></script>
+    *@
+
+    <!-- JS Scripts -->
+    @*     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> *@
+    <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+        <symbol id="icon-search" viewBox="0 0 18 19" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor" />
+        </symbol>
+        <symbol id="icon-close" class="icon icon-close" fill="none" viewBox="0 0 18 17">
+            <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
+        </symbol>
+    </svg>
+    <div id="easystore-section-header">
+        
+    </div>
+    <style>
+        .cart-notification {
+            display: none;
+        }
+    </style>
+    <script>
+        // document.getElementById('cart-notification-form').addEventListener('submit', (event) => {
+        //     if (event.submitter) event.submitter.classList.add('loading');
+        // })
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+                  const dropdownBtn = document.getElementById("dropdown-btn");
+                  const dropdownMenu = document.getElementById("dropdown-menu");
+                  const profileDropdown = document.getElementById("profileDropdown");
+                  const dropdownBtn1 = document.getElementById("dropdown-btn1");
+                  const dropdownMenu1 = document.getElementById("dropdown-menu1");
+
+                  dropdownBtn.addEventListener("click", function(event) {
+                      dropdownMenu.style.display = dropdownMenu.style.display === "flex" ? "none" : "flex";
+                      event.stopPropagation();
+                  });
+
+                  dropdownBtn1.addEventListener("click", function(event) {
+                      dropdownMenu1.style.display = dropdownMenu1.style.display === "flex" ? "none" : "flex";
+                      event.stopPropagation();
+                  });
+
+
+                  document.addEventListener("click", function(event) {
+                      if (!dropdownBtn.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                          dropdownMenu.style.display = "none";
+                      }
+                  });
+              });
+    </script>
+    <script>
+
+        // function showOrHide(total_announcement_left) {
+        //   if (total_announcement_left <= 1) {
+        //     $("#previous-announcement-bar-button,#next-announcement-bar-button").hide();
+        //   } else {
+        //     $("#previous-announcement-bar-button,#next-announcement-bar-button").show();
+        //   }
+
+        //   if (total_announcement_left == 0) {
+        //     $("#announcement-close-button").hide();
+        //     $("#announcement-bar").hide();
+        //     $('#announcement-bar-top').hide();
+        //   }
+        // };
+        class StickyHeader extends HTMLElement {
+            constructor() {
+                super();
+            }
+
+            connectedCallback() {
+                this.header = document.getElementById('easystore-section-header');
+                this.headerBounds = {};
+                this.currentScrollTop = 0;
+                this.preventReveal = false;
+
+                this.onScrollHandler = this.onScroll.bind(this);
+                this.hideHeaderOnScrollUp = () => this.preventReveal = true;
+
+                this.addEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
+                window.addEventListener('scroll', this.onScrollHandler, false);
+
+                this.createObserver();
+            }
+
+            disconnectedCallback() {
+                this.removeEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
+                window.removeEventListener('scroll', this.onScrollHandler);
+            }
+
+            createObserver() {
+                let observer = new IntersectionObserver((entries, observer) => {
+                    this.headerBounds = entries[0].intersectionRect;
+                    observer.disconnect();
+                });
+
+                observer.observe(this.header);
+            }
+
+            onScroll() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+                    requestAnimationFrame(this.hide.bind(this));
+                } else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+                    if (!this.preventReveal) {
+                        requestAnimationFrame(this.reveal.bind(this));
+                    } else {
+                        window.clearTimeout(this.isScrolling);
+
+                        this.isScrolling = setTimeout(() => {
+                            this.preventReveal = false;
+                        }, 66);
+
+                        requestAnimationFrame(this.hide.bind(this));
+                    }
+                } else if (scrollTop <= this.headerBounds.top) {
+                    requestAnimationFrame(this.reset.bind(this));
+                }
+
+
+                this.currentScrollTop = scrollTop;
+            }
+
+            hide() {
+                this.header.classList.add('easystore-section-header-hidden', 'easystore-section-header-sticky');
+                this.closeMenuDisclosure();
+                // this.closeSearchModal();
+            }
+
+            reveal() {
+                this.header.classList.add('easystore-section-header-sticky', 'animate');
+                this.header.classList.remove('easystore-section-header-hidden');
+            }
+
+            reset() {
+                this.header.classList.remove('easystore-section-header-hidden', 'easystore-section-header-sticky', 'animate');
+            }
+
+            closeMenuDisclosure() {
+                this.disclosures = this.disclosures || this.header.querySelectorAll('details-disclosure');
+                this.disclosures.forEach(disclosure => disclosure.close());
+            }
+
+            // closeSearchModal() {
+            //   this.searchModal = this.searchModal || this.header.querySelector('details-modal');
+            //   this.searchModal.close(false);
+            // }
+        }
+
+        // customElements.define('sticky-header', StickyHeader);
+
+
+        class DetailsDisclosure extends HTMLElement {
+            constructor() {
+                super();
+                this.mainDetailsToggle = this.querySelector('details');
+                // this.mainDetailsToggle.addEventListener('focusout', this.onFocusOut.bind(this));
+                this.mainDetailsToggle.addEventListener('mouseover', this.open.bind(this));
+                this.mainDetailsToggle.addEventListener('mouseleave', this.close.bind(this));
+            }
+
+            onFocusOut() {
+                setTimeout(() => {
+                    if (!this.contains(document.activeElement)) this.close();
+                })
+            }
+
+            open() {
+                this.mainDetailsToggle.setAttribute('open', 1)
+            }
+
+            close() {
+                this.mainDetailsToggle.removeAttribute('open')
+            }
+        }
+
+        // customElements.define('details-disclosure', DetailsDisclosure);
+
+
+        //      document.addEventListener("DOMContentLoaded", function() {
+        //     const popup = document.getElementById("popup");
+        //     popup.classList.remove("hidden");
+
+        //     popup.addEventListener("mouseenter", () => {
+        //         popup.style.opacity = "1";
+        //     });
+
+        //     popup.addEventListener("mouseleave", () => {
+        //         popup.style.opacity = "0.9";
+        //     });
+        // });
+
+        function closePopup() {
+            const popup = document.getElementById("popup");
+            popup.classList.add("hidden");
+        }
+        // End - search history dropdown
+
+
+        
+    </script>
+    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+
+
+@*         <link rel="stylesheet" href="/assets/css/vouchers.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+ *@
+@*         <script src="/assets/js/promotion/vouchers.js?v1.1" type="text/javascript"></script>
+    <script src="https://store-themes.easystore.co/896/themes/49034/assets/cart.js?t=1733504410" defer="defer"></script>
+ *@        
+
+        <section class="spaced-section">
+            <div id="cart-promotion-top"></div>
+            <h1 class="title title--primary" style="text-align:center;">Your Cart</h1>
+
+            <div id="cart-template">
+                <form action="/SecretRecipe/Checkout" class="cart__contents critical-hidden" id="cart-form">
+                
+
+                    <cart-items class="page-width is-empty" style="background-color: white; border-radius:15px; padding:30px;">
+                        <div class="title-wrapper-with-link">
+                            <a href="/SecretRecipe/CakeCategories" class="underlined-link">Continue shopping</a>
+                        </div>
+
+                        <div class="cart__warnings">
+                            <h1 class="cart__empty-text">Your cart is currently empty.</h1>
+                            <a href="/SecretRecipe/CakeCategories" class="button">
+                                Continue shopping
+                            </a>
+                        </div>
+
+                        <!-- Cart error -->
+
+
+                        <div class="cart_form__error note errors hidden">
+                            <div class="js-error-content"></div>
+                        </div>
+
+                        <div class="cart__items" id="main-cart-items">
+                            <div class="js-contents">
+                                <table class="cart-items">
+                                    <thead>
+                                        <tr>
+                                            <th class="caption-with-letter-spacing" colspan="2" scope="col">Product</th>
+                                            <th class="medium-hide large-up-hide right caption-with-letter-spacing" colspan="1" scope="col">Total</th>
+                                            <th class="cart-items__heading--wide small-hide caption-with-letter-spacing" colspan="1" scope="col">Quantity</th>
+                                            <th class="small-hide right caption-with-letter-spacing" colspan="1" scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </cart-items>
+
+                    <div class="page-width is-empty" id="main-cart-footer">
+                        <div class="cart__footer">
+                            <div class="cart__blocks">
+
+
+
+
+
+                                @* <discount-input>
+                                    <div class="field">
+                                        <input type="text" id="input-discount_code" class="search__input field__input" name="voucher_code" placeholder="Discount code" style="background-color: white;">
+                                        <label class="field__label" for="input-discount_code" id="lblDisCode">Discount code</label>
+                                        <button type="button" name="apply" class="button button--secondary" onclick="applyDiscount()" style="background-color: white;">Apply</button>
+                                    </div>
+                                    <div class="form__message hidden" tabindex="-1" autofocus="">
+
+
+
+                                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error " viewBox="0 0 13 13">
+                                            <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"></circle>
+                                            <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"></circle>
+                                            <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"></path>
+                                            <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7"></path>
+                                        </svg>
+
+
+
+                                        <div class="js-error-content"></div>
+                                    </div>
+                                </discount-input>  *@
+
+
+
+                                <!-- Cart discount -->
+
+
+                                <div>
+                                    <div class="totals">
+                                        <p class="totals__subtotal">Subtotal</p>
+                                        <p class="totals__subtotal-value" id="cartSubTotal" value="">SGD$ 0.00</p>
+                                    </div>
+
+                                    <div></div>
+@*                                     <small class="tax-note caption-large rte">Shipping, taxes, and discounts will be calculated at checkout.</small>
+ *@                                    <small class="tax-note caption-large rte">Shipping and taxes will be calculated at checkout.</small>
+                                </div>
+                                <div class="cart__ctas">
+                                    <input type="hidden" name="current_currency" value="SGD">
+                                    <input type="text" name="greeting_card_message" id="greetingCardMessage" class="hp hide hidden" tabindex="-1" autocomplete="off">
+                                    <input type="text" name="product_ids" id="productIds" class="hp hide hidden" tabindex="-1" autocomplete="off">
+
+                                    <noscript>
+                                        <button type="submit" name="update" class="cart__update-button button button--secondary">
+                                            Update Cart
+                                        </button>
+                                    </noscript>
+                                    <button type="submit" id="checkout" class="product-form__submit button button--full-width button--primary" name="checkout" value="true">
+                                        Checkout
+                                    </button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+@*             <link href="/assets/css/promotion.css?v2.92" rel="stylesheet" type="text/css" media="screen">
+ *@            <div id="cart-promotion-section">
+                <form id="sf_promo-416038" class="sf_promo-form" method="post" data-promotion-id="416038" data-template="cart">
+                    <div class="sf_promo-container">
+                        <div class="promo-container">
+                            <div style="display:inline-flex;align-items:center">
+                                <svg class="svg-icon" style="margin-right:10px;width:30px;height:30px;flex-shrink: 0;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.8,12s0-.07,0-.11a1.92,1.92,0,0,0-.63-1.29c0-.06-.06-.08-1.67-1.69V7a5.24,5.24,0,0,0-.08-1.07,1.74,1.74,0,0,0-.34-.71,1.22,1.22,0,0,0-.17-.15L18.86,5a1.67,1.67,0,0,0-.94-.46h0a5.37,5.37,0,0,0-.72-.06H15.12c-.86-.86-1.31-1.3-1.57-1.53l0,0A1.93,1.93,0,0,0,12,2.2h0l-.13,0a2.06,2.06,0,0,0-1.37.7h0L8.88,4.49H6.8a2.18,2.18,0,0,0-1.74.59,1.16,1.16,0,0,0-.17.18,2.38,2.38,0,0,0-.4,1.54V8.88c-.93.93-1.39,1.39-1.62,1.66h0a2,2,0,0,0-.67,1.33s0,.07,0,.11v0l0,.13a2.06,2.06,0,0,0,.7,1.37h0l1.6,1.61v2.14a2.23,2.23,0,0,0,.45,1.54,1,1,0,0,0,.15.14.27.27,0,0,0,.07.08,1.26,1.26,0,0,0,.47.31A3.4,3.4,0,0,0,7,19.51H8.88c.86.86,1.31,1.31,1.57,1.53v0A1.89,1.89,0,0,0,12,21.8h.17a1.51,1.51,0,0,0,.9-.31,17.46,17.46,0,0,0,2.08-2H17a4.46,4.46,0,0,0,1.1-.1,1.74,1.74,0,0,0,.82-.47,1.41,1.41,0,0,0,.38-.51,3.28,3.28,0,0,0,.2-1.42V15.12c1-1,1.35-1.35,1.52-1.54h0A2.09,2.09,0,0,0,21.8,12V12Zm-1.5.16a1.63,1.63,0,0,1-.32.39s0,0,0,0l-1.71,1.72a.75.75,0,0,0-.22.53V17a2.9,2.9,0,0,1-.06.79.47.47,0,0,0-.1.1.44.44,0,0,1-.1.06A4.05,4.05,0,0,1,17,18h-2.2a.75.75,0,0,0-.53.22c-1.66,1.66-2,2-2.06,2a.27.27,0,0,1-.09.06h-.26a2,2,0,0,1-.38-.3l0,0L9.72,18.23A.75.75,0,0,0,9.19,18H7A3.31,3.31,0,0,1,6.23,18c-.06-.06-.11-.12-.17-.17A1.28,1.28,0,0,1,6,17.26V14.81a.75.75,0,0,0-.22-.53L4,12.49l0,0a1.23,1.23,0,0,1-.27-.35v0a1.41,1.41,0,0,0,0-.2h0a2.35,2.35,0,0,1,.24-.3l0-.05,1.79-1.8A.75.75,0,0,0,6,9.19V6.82c0-.42.06-.59,0-.59l.07-.07.1-.1A1.69,1.69,0,0,1,6.8,6H9.19a.75.75,0,0,0,.53-.22L11.51,4l0,0a1.23,1.23,0,0,1,.35-.27h.24a1.5,1.5,0,0,1,.38.3l0,0,1.74,1.73a.75.75,0,0,0,.53.22h2.37l.44,0h0l.13,0a.87.87,0,0,0,.17.16v0A5.55,5.55,0,0,1,18,7V9.19a.75.75,0,0,0,.22.53L20,11.54a1.62,1.62,0,0,1,.26.32v0a1.41,1.41,0,0,0,0,.2ZM15.9,8.5a.75.75,0,0,1,0,1.06L9.69,15.77a.76.76,0,0,1-1.07,0,.75.75,0,0,1,0-1.06L14.84,8.5A.75.75,0,0,1,15.9,8.5Zm-6.82,2a1,1,0,1,1,1.45,0A1,1,0,0,1,9.08,10.47Zm6.22,3.32a1,1,0,1,1-1.45,0A1,1,0,0,1,15.3,13.79Z"></path></svg>
+                                <div class="h4 text-left" style="margin-bottom:0;">Add on Cake Cooler Bag</div>
+                            </div>
+                            <div class="sf_promo-main-container-margin">
+
+
+                                <div class="secondary-prod is-selected" id="sf_promo-product-12328440-1_cart" style="background-color: white;">
+
+                                    <!-- Image -->
+                                    <label for="sf_promo-product-checkbox-12328440-1_cart" class="img-container">
+                                        <img class="sf_promo-prod-img sf_promo-product-image"
+                                             src=""
+                                             id="ProductPhoto-slide01"
+                                             alt="Cake Cooler Bag"
+                                             width="100%"
+                                             loading="lazy">
+                                        <span class="sold-out-text float-center hide">Sold Out</span>
+                                    </label>
+
+                                    <!-- Checkbox and label -->
+                                    <label for="sf_promo-product-checkbox-12328440-1_cart" class="checkbox-select-wrapper">
+                                        <div class="input-check" style="margin-top: 5px;">
+                                            <input type="checkbox"
+                                                   id="addOnCooler"
+                                                   data-promotion-id="416038"
+                                                   data-product-id="12328440-1_cart"
+                                                   class="checkbox sf_promo-prod-checkbox">
+                                            <span class="input-checkmark"></span>
+                                        </div>
+                                        Cake Cooler Bag (Up to 1R Size)
+                                    </label>
+
+                                    <!-- Variant select -->
+                                    <select id="sf_promo-product-12328440-1_cart"
+                                            class="sf_promo-select sf_promo-variant-select hide is-selected"
+                                            data-product-id="12328440-1_cart"
+                                            is-initial="true">
+                                        <option value="56867366"
+                                                data-price="490"
+                                                data-compare_at_price="0"
+                                                data-quantity="321"
+                                                data-available="1"
+                                                data-promotion-id="416038"
+                                                data-product-id="12328440-1_cart"
+                                                data-varaint-img="https://cdn.store-assets.com/s/896/i/75668520.jpeg">
+                                            Default Title
+                                        </option>
+                                    </select>
+
+                                    <input type="hidden"
+                                           id="sf_promo-product-12328440-1_cart"
+                                           class="sf_promo-variant_hidden_input is-selected"
+                                           value="56867366"
+                                           name="promo_variant">
+
+                                    <!-- Price and quantity controls -->
+                                    <div class="display-control">
+                                        <div class="sf_promo-product-price-wrapper">
+                                            <div class="sf_promo-product-discounted-price">
+                                                <span class="money" data-ori-price="" id="itemPrice"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="sf_promo-qty-adjust">
+                                            <span class="sf_promo-product-single__btn-qty-adjust" data-adjust="0">-</span>
+                                            <input class="sf_promo-quantity-input sf_promo-quantity-selector"
+                                                   id="cooler_bag_qty"
+                                                   type="number"
+                                                   value="1"
+                                                   max="321"
+                                                   name="promo_qty"
+                                                   required
+                                                   style="height:auto;">
+                                            <span class="sf_promo-product-single__btn-qty-adjust" data-adjust="1">+</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <button type="submit" name="addPromoBtn" id="addPromoBtn" class="product-form__submit button button--full-width button--primary">
+                                    Add to Cart
+                                </button>
+                            
+                            </div>
+                            
+                        </div>
+                    </div>
+                </form>
+                </div>
+
+            <script>var shop_money_format = "<span class=money data-ori-price='{{amount}}'>SGD$ {{amount}} </span>";</script>
+@*             <script src="/assets/js/promotion/promotion.js?v1.11" type="text/javascript"></script>
+ *@
+
+        </section>
+
+        <vouchers-modal>
+            <div class="vouchers-modal-wrapper page-width">
+                <div id="vouchers-modal" class="vouchers-modal focus-inset" aria-modal="true" role="dialog" tabindex="-1" style="display:none;">
+                    <div class="vouchers-modal__header">
+                        <div class="vouchers-modal__heading">Vouchers</div>
+                        <button type="button" class="vouchers-modal__close modal__close-button link link--text focus-inset" aria-label="accessibility.close">
+
+
+
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-close " fill="none" viewBox="0 0 18 17">
+                                <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
+                                </path>
+                            </svg>
+
+
+
+                        </button>
+                    </div>
+
+                    <discount-input>
+                        <div class="field">
+                            <input type="text" id="input-discount_code" class="search__input field__input" name="voucher_code" placeholder="Discount code">
+                            <label class="field__label" for="input-discount_code">Discount code</label>
+                            <button type="button" name="apply" class="button button--secondary">Apply</button>
+                        </div>
+                        <div class="form__message hidden" tabindex="-1" autofocus="">
+
+
+
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error " viewBox="0 0 13 13">
+                                <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"></circle>
+                                <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"></circle>
+                                <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"></path>
+                                <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7"></path>
+                            </svg>
+
+
+
+                            <div class="js-error-content"></div>
+                        </div>
+                    </discount-input>
+                    <br>
+
+
+
+                    <div class="empty-vouchers_placeholder">No available vouchers</div>
+
+
+                </div>
+            </div>
+            <div id="vouchers-modal-backdrop" class="vouchers-modal__close"></div>
+        </vouchers-modal>
+
+@*         <link rel="stylesheet" href="https://store-themes.easystore.co/896/themes/49034/assets/component-card.css?t=1733504410" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="stylesheet" href="https://store-themes.easystore.co/896/themes/49034/assets/component-price.css?t=1733504410" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="stylesheet" href="https://store-themes.easystore.co/896/themes/49034/assets/component-product-grid.css?t=1733504410" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+        <link rel="stylesheet" href="https://store-themes.easystore.co/896/themes/49034/assets/component-slider.css?t=1733504410" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="stylesheet" href="https://store-themes.easystore.co/896/themes/49034/assets/template-collection.css?t=1733504410" as="style" onload="this.onload=null;this.rel='stylesheet'"> *@
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*         <div class="collection page-width page-margin page-width-desktop">
+            <div class="title-wrapper-with-link  title-wrapper--self-padded-tablet-down">
+                <h2 class="title">
+
+                    Featured Collection
+
+                </h2>
+
+
+                <a href="/collections/feature-on-homepage" class="link underlined-link large-up-hide">View all</a>
+
+            </div>
+
+            <slider-component class="slider-mobile-gutter">
+                <ul class="grid grid--2-col product-grid grid--3-col-tablet grid--4-col-desktop slider slider--tablet grid--peek" role="list">
+
+                    <li class="grid__item slider__slide">
+                        <link rel="stylesheet" href="https://store-themes.easystore.co/896/themes/49034/assets/component-loading-overlay.css?t=1735784184" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="card-wrapper">
+                            <a href="/collections/feature-on-homepage/products/christmas-pie-2022-1" class="full-unstyled-link">
+                                <div class="card card--product card--outline grid-link__image--product" tabindex="-1">
+                                    <div class="card__inner">
+                                        <div class="media media--transparent media--portrait media--hover-effect">
+                                            <img src="https://cdn.store-assets.com/s/896/i/78985254.png" alt="xmas-beef-pie-cut" loading="lazy">
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+                                <div class="card-information">
+                                    <div class="card-information__wrapper">
+
+                                        <!-- Snippet:collection/product_top: Product Label -->
+                                        <!-- /Snippet -->
+
+                                        <span class="card-information__text h5">
+                                            X'mas Pie
+                                        </span>
+
+                                        <span class="caption-large light"></span>
+
+
+                                        <div class="price
+
+
+  ">
+
+                                            <dl>
+                                                <div class="price__regular">
+                                                    <dt>
+                                                        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <span class="price-item price-item--regular">
+
+
+                                                            <span class="money" data-ori-price="29.90">SGD$ 29.90 </span>
+
+
+                                                        </span>
+                                                    </dd>
+                                                </div>
+                                                <div class="price__sale">
+                                                    <dt class="price__compare">
+                                                        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                                                    </dt>
+                                                    <dd class="price__compare">
+                                                        <s class="price-item price-item--regular">
+
+                                                            <span class="money" data-ori-price="0.00">SGD$ 0.00 </span>
+
+
+                                                        </s>
+                                                    </dd>
+                                                    <dt>
+                                                        <span class="visually-hidden visually-hidden--inline">Sale price</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <span class="price-item price-item--sale">
+
+
+                                                            <span class="money" data-ori-price="29.90">SGD$ 29.90 </span>
+
+
+                                                        </span>
+                                                    </dd>
+                                                </div>
+                                            </dl>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </li>
+
+                    <li class="grid__item slider__slide">
+                        <link rel="stylesheet" href="https://store-themes.easystore.co/896/themes/49034/assets/component-loading-overlay.css?t=1735784184" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="card-wrapper">
+                            <a href="/collections/feature-on-homepage/products/lotus-biscoff-cheese" class="full-unstyled-link">
+                                <div class="card card--product card--outline grid-link__image--product" tabindex="-1">
+                                    <div class="card__inner">
+                                        <div class="media media--transparent media--portrait media--hover-effect">
+                                            <img src="https://cdn.store-assets.com/s/896/i/74887665.jpeg" alt="Lotus Biscoff Cheesecake" loading="lazy">
+
+                                        </div>
+
+
+
+                                    </div>
+                                    <span class="prodlabelv2-badge prodlabelv2-position prodlabelv2-ribbon prodlabelv2-top_right" style="background-color:rgb(237, 27, 37);color:rgb(255, 255, 255);font-size:15px;color:rgb(237, 27, 37);"><span class="prodlabelv2-badge-text" style="background-color:rgb(237, 27, 37);color:rgb(255, 255, 255);font-size:15px;">NEW</span></span>
+                                </div>
+
+                                <div class="card-information">
+                                    <div class="card-information__wrapper">
+
+                                        <!-- Snippet:collection/product_top: Product Label -->
+                                        <!-- /Snippet -->
+
+                                        <span class="card-information__text h5">
+                                            Lotus Biscoff Cheese
+                                        </span>
+
+                                        <span class="caption-large light"></span>
+
+
+                                        <div class="price
+
+
+  ">
+
+                                            <dl>
+                                                <div class="price__regular">
+                                                    <dt>
+                                                        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <span class="price-item price-item--regular">
+
+
+                                                            <span class="money" data-ori-price="62.90">SGD$ 62.90 </span>
+
+
+                                                        </span>
+                                                    </dd>
+                                                </div>
+                                                <div class="price__sale">
+                                                    <dt class="price__compare">
+                                                        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                                                    </dt>
+                                                    <dd class="price__compare">
+                                                        <s class="price-item price-item--regular">
+
+                                                            <span class="money" data-ori-price="62.90">SGD$ 62.90 </span>
+
+
+                                                        </s>
+                                                    </dd>
+                                                    <dt>
+                                                        <span class="visually-hidden visually-hidden--inline">Sale price</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <span class="price-item price-item--sale">
+
+
+                                                            <span class="money" data-ori-price="62.90">SGD$ 62.90 </span>
+
+
+                                                        </span>
+                                                    </dd>
+                                                </div>
+                                            </dl>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </li>
+
+                    <li class="grid__item slider__slide">
+                        <link rel="stylesheet" href="https://store-themes.easystore.co/896/themes/49034/assets/component-loading-overlay.css?t=1735784184" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="card-wrapper">
+                            <a href="/collections/feature-on-homepage/products/chocolate-indulgence" class="full-unstyled-link">
+                                <div class="card card--product card--outline grid-link__image--product" tabindex="-1">
+                                    <div class="card__inner">
+                                        <div class="media media--transparent media--portrait media--hover-effect">
+                                            <img src="https://cdn.store-assets.com/s/896/i/74887768.jpeg" alt="chocolate indulgence" loading="lazy">
+
+                                        </div>
+
+
+
+                                    </div>
+                                    <span class="prodlabelv2-badge prodlabelv2-position prodlabelv2-circle prodlabelv2-top_right" style="background-color:rgb(245, 111, 0);color:rgb(255, 255, 255);font-size:10px;color:rgb(245, 111, 0);"><span class="prodlabelv2-badge-text" style="background-color:rgb(245, 111, 0);color:rgb(255, 255, 255);font-size:10px;">Best Seller</span></span>
+                                </div>
+
+                                <div class="card-information">
+                                    <div class="card-information__wrapper">
+
+                                        <!-- Snippet:collection/product_top: Product Label -->
+                                        <!-- /Snippet -->
+
+                                        <span class="card-information__text h5">
+                                            Chocolate Indulgence
+                                        </span>
+
+                                        <span class="caption-large light"></span>
+
+
+                                        <div class="price
+
+
+  ">
+
+                                            <dl>
+                                                <div class="price__regular">
+                                                    <dt>
+                                                        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <span class="price-item price-item--regular">
+                                                            From
+
+                                                            <span class="money" data-ori-price="38.90">SGD$ 38.90 </span>
+
+
+                                                        </span>
+                                                    </dd>
+                                                </div>
+                                                <div class="price__sale">
+                                                    <dt class="price__compare">
+                                                        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                                                    </dt>
+                                                    <dd class="price__compare">
+                                                        <s class="price-item price-item--regular">
+
+                                                            <span class="money" data-ori-price="0.00">SGD$ 0.00 </span>
+
+
+                                                        </s>
+                                                    </dd>
+                                                    <dt>
+                                                        <span class="visually-hidden visually-hidden--inline">Sale price</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <span class="price-item price-item--sale">
+                                                            From
+
+                                                            <span class="money" data-ori-price="38.90">SGD$ 38.90 </span>
+
+
+                                                        </span>
+                                                    </dd>
+                                                </div>
+                                            </dl>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </li>
+
+                    <li class="grid__item slider__slide">
+                        <link rel="stylesheet" href="https://store-themes.easystore.co/896/themes/49034/assets/component-loading-overlay.css?t=1735784184" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="card-wrapper">
+                            <a href="/collections/feature-on-homepage/products/milo-cheese" class="full-unstyled-link">
+                                <div class="card card--product card--outline grid-link__image--product" tabindex="-1">
+                                    <div class="card__inner">
+                                        <div class="media media--transparent media--portrait media--hover-effect">
+                                            <img src="https://cdn.store-assets.com/s/896/i/74887229.jpeg" alt="milo cheese" loading="lazy">
+
+                                        </div>
+
+
+                                        <div class="sale-sold-badge"><span class="badge badge--bottom-left">Sold Out</span></div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="card-information">
+                                    <div class="card-information__wrapper">
+
+                                        <!-- Snippet:collection/product_top: Product Label -->
+                                        <!-- /Snippet -->
+
+                                        <span class="card-information__text h5">
+                                            MILO Cheese
+                                        </span>
+
+                                        <span class="caption-large light"></span>
+
+
+                                        <div class="price
+
+   price--sold-out
+  ">
+
+                                            <dl>
+                                                <div class="price__regular">
+                                                    <dt>
+                                                        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <span class="price-item price-item--regular">
+
+
+                                                            <span class="money" data-ori-price="62.90">SGD$ 62.90 </span>
+
+
+                                                        </span>
+                                                    </dd>
+                                                </div>
+                                                <div class="price__sale">
+                                                    <dt class="price__compare">
+                                                        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                                                    </dt>
+                                                    <dd class="price__compare">
+                                                        <s class="price-item price-item--regular">
+
+                                                            <span class="money" data-ori-price="62.90">SGD$ 62.90 </span>
+
+
+                                                        </s>
+                                                    </dd>
+                                                    <dt>
+                                                        <span class="visually-hidden visually-hidden--inline">Sale price</span>
+                                                    </dt>
+                                                    <dd>
+                                                        <span class="price-item price-item--sale">
+
+
+                                                            <span class="money" data-ori-price="62.90">SGD$ 62.90 </span>
+
+
+                                                        </span>
+                                                    </dd>
+                                                </div>
+                                            </dl>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </li>
+
+                </ul>
+
+                <div class="slider-buttons no-js-hidden">
+                    <button type="button" class="slider-button slider-button--prev" name="previous" disabled="true">
+
+
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret " viewBox="0 0 10 6">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
+                        </svg>
+
+
+                    </button>
+                    <div class="slider-counter caption">
+                        <span class="slider-counter--current">1</span>
+                        <span aria-hidden="true"> / </span>
+                        <span class="slider-counter--total">2</span>
+                    </div>
+                    <button type="button" class="slider-button slider-button--next" name="next">
+
+
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret " viewBox="0 0 10 6">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
+                        </svg>
+
+
+                    </button>
+                </div>
+
+            </slider-component>
+
+
+            <div class="center small-hide medium-hide">
+                <a href="/collections/feature-on-homepage" class="button">
+                    View all
+                </a>
+            </div>
+
+        </div>
+ *@
+
+
+
+    </main>
+    <style>
+        .description {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            text-align: left;
+            color: white;
+            background: rgb(218, 33, 40);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+            .description .title {
+                margin: 0;
+                font-size: 18px;
+            }
+
+            .description p {
+                margin: 5px 0 0;
+                font-size: 14px;
+            }
+
+
+
+        .footer {
+            background-color: #DA2128;
+            color: #FFFFFF;
+        }
+
+            .footer .link--text,
+            .footer .list-menu__item--link,
+            .footer .footer-block__details-content .list-menu__item--link {
+                color: #FFFFFF;
+            }
+
+        .footer-block__heading {
+            color: #FFFFFF;
+        }
+    </style>
+    <link rel="preload" href="/css/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <footer class="footer color-background-1" id="footerContent">
+    </footer>
+
+@*     <script>
+        let page_template = 'index';
+
+        if (document.querySelector('.currency-picker')) {
+            EasyStore.Currencies.change(document.querySelector('.currency-picker').value)
+            EasyStore.Currencies.convertAll()
+        }
+
+        document.querySelectorAll('.currency-picker').forEach((el) => {
+            el.addEventListener('change', (event) => {
+                EasyStore.Currencies.change(event.target.value)
+
+
+                if (page_template == 'cart') {
+                    const params = new URLSearchParams(window.location.search);
+                    params.set('delete_cache', 1);
+                    window.location.search = params;
+                } else {
+                    window.location.reload();
+                }
+
+                return
+
+
+                document.querySelectorAll('[name=currencies],[name=current_currency]').forEach((el) => {
+                    el.value = event.target.value
+                })
+
+                if (page_template == 'cart') location.reload();
+            })
+        })
+    </script>
+ *@   <!-- Snippet:global/body_end: Product Label -->
+    <link href='https://apps.easystore.co/assets/css/product-label/main.css?v2.3' rel='stylesheet' type='text/css' media='screen' />
+    <script src='https://apps.easystore.co/product-labels/productlabelv2.js?shop=secretrecipe2.easy.co' type='text/javascript'></script>
+    <!-- /Snippet -->
+    <!-- Snippet:global/body_end: Product Description Tabs -->
+    <style>
+        .totals {
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+        }
+        .product-description-tabs {
+            color: #000000;
+        }
+
+        .prod-desc-tab-container {
+            padding: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: #ffffff;
+        }
+        /* Style the list */
+        .prod-desc-tab {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            border-bottom: solid 1px #ddd;
+            /*overflow: hidden;
+                                                     border: 1px solid #e6e6e6;
+                                                     background-color: #fefefe;
+                                                     border-bottom: 1px solid #ddd;*/
+        }
+        /* Float the list items side by side */
+        li.tablinks {
+            display: inline-block;
+            border-top: 3px solid transparent;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            margin-bottom: -1px;
+            margin-right: 3px;
+            border-radius: 4px 4px 0 0;
+            background-color: rgba(212,212,212,0.3);
+        }
+            /* Style the links inside the list items */
+            li.tablinks a {
+                color: #000000;
+                cursor: pointer;
+                margin-right: 2px;
+                line-height: 1.42857143;
+                display: block;
+                padding: 10px 15px;
+            }
+            /* Change background color of links on hover */
+            li.tablinks:hover {
+                background-color: #ffffff;
+                border-bottom-color: transparent;
+                border-top: 3px solid #ddd;
+                border-left: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+            }
+            /*rgba(212,212,212,0.3)*/
+            /* Create an active/current tablink class */
+            li.tablinks a:focus, li.tablinks.active {
+                border-top: 3px solid #ddd;
+                border-left: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                background-color: #ffffff;
+            }
+        /* Style the tab content */
+        .prod-desc-tab-content {
+            display: none;
+            padding: 15px 15px;
+            /*border: 1px solid #ccc;*/
+            border-top: none;
+            clear: both;
+            -webkit-animation: fadeEffect 1s;
+            animation: fadeEffect 1s; /* Fading effect takes 1 second */
+        }
+
+            .prod-desc-tab-content > ul {
+                list-style-type: disc;
+            }
+            /* if user select is_show_title is true, the title will be displayed; if not, hide the title*/
+            .prod-desc-tab-content > h2 {
+                display: block;
+            }
+
+        cart-notification {
+            display: none;
+        }
+
+    </style>
+
+    <style>
+        .sf_promo-promo-label, #sf_promo-view-more-tag, .sf_promo-label-unclickable:hover {
+            color: #ED1B25;
+        }
+
+        .button--primary {
+            font-size: 13px;
+            border: 2px solid var(--main-color);
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 5px 10px;
+            color: white;
+            background-color: rgba(var(--color-button), var(--alpha-button-background));
+            box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border));
+            background-image: linear-gradient(var(--main-color), #991e1e);
+            transition: all 0.3s ease-in-out;
+            box-shadow: 3px 3px 10px #00000070;
+        }
+
+            .button--primary:hover {
+                background-color: #fce2df;
+                background-image: none !important;
+                color: var(--main-color) !important;
+                box-shadow: 0 0 0 0.5rem rgba(var(--color-button), var(--alpha-button-border));
+            }
+
+    </style>
+    <!-- /Snippet -->
+    <!-- Snippet:global/body_end: Mailchimp E-Commerce -->
+    <script id="mcjs">
+        !function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/24e0cfc4189994a568db30312/7b2e6b904b995018df4236300.js");
+    </script>
+    <script>
+        cartCount();
+        document.addEventListener('DOMContentLoaded', function () {
+            const decreaseButton = document.querySelector('[data-adjust="0"]');
+            const increaseButton = document.querySelector('[data-adjust="1"]');
+            const quantityInput = document.querySelector('.sf_promo-quantity-input');
+            const maxQuantity = parseInt(quantityInput.getAttribute('max'), 10);
+            const minQuantity = 1; // You can set this to the minimum value you want.
+
+            // Handle the decrease button click
+            decreaseButton.addEventListener('click', function() {
+                let currentValue = parseInt(quantityInput.value, 10);
+                if (currentValue > minQuantity) {
+                    quantityInput.value = currentValue - 1;
+                }
+            });
+
+            // Handle the increase button click
+            increaseButton.addEventListener('click', function() {
+                let currentValue = parseInt(quantityInput.value, 10);
+                if (currentValue < maxQuantity) {
+                    quantityInput.value = currentValue + 1;
+                }
+            });
+        });
+
+        // Utility function to show elements
+        function showElement(element) {
+            if (element) {
+                element.style.display = 'block';
+            }
+        }
+
+        // Utility function to hide elements
+        function hideElement(element) {
+            if (element) {
+                element.style.display = 'none';
+            }
+        }
+
+        // Utility function to toggle modal state
+        function toggleModal(isOpen) {
+            if (isOpen) {
+                showElement(modal);
+                showElement(overlay);
+                // hideElement(mainContainer);
+                // hideElement(footer);
+            } else {
+                hideElement(modal);
+                hideElement(overlay);
+                showElement(mainContainer);
+                showElement(footer);
+            }
+        }
+
+        // Ensure event listeners are attached properly
+        function attachClickListener(element, callback) {
+            if (element) {
+                element.addEventListener('click', callback);
+            }
+        }
+
+        // Get elements using document
+        const openButtonIcon = document.querySelector('#icon-searchbtn'); // Button for opening the modal
+        const closeButtonIcon = document.querySelector('.modal__close-button .icon');
+        const modal = document.querySelector('#search_modal');
+        const overlay = document.querySelector('.modal-overlay');
+        const mainContainer = document.querySelector('#maincontent');
+        const footer = document.querySelector('.footer.color-background-1');
+        const closeButton = document.querySelector('.search-modal__close-button');
+        var detailsElement = document.getElementById("myDetails");
+
+        // Ensure modal and overlay are hidden by default
+        hideElement(modal);
+        hideElement(overlay);
+
+        // Add event listener for opening the modal
+        attachClickListener(openButtonIcon, function () {
+            toggleModal(true); // Open the modal
+        });
+
+        // Add event listeners for closing the modal
+        attachClickListener(closeButton, function () {
+            toggleModal(false); // Close the modal
+            // Remove the 'open' attribute from the <details> element
+            detailsElement.removeAttribute("open");
+            console.log("Modal closed and details removed");
+        });
+
+        attachClickListener(closeButtonIcon, function () {
+            toggleModal(false); // Close the modal
+            // Remove the 'open' attribute from the <details> element
+            detailsElement.removeAttribute("open");
+            console.log("Modal closed and details removed");
+        });
+
+        // Add event listener to close the modal when the overlay is clicked
+        attachClickListener(overlay, function () {
+            toggleModal(false); // Close the modal
+            // Remove the 'open' attribute from the <details> element
+            detailsElement.removeAttribute("open");
+            console.log("Modal closed and details removed");
+        });
+
+
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        const cartCounts = cart.length; // Ensure cartCount is zero if cart is empty
+        if(cartCounts > 0) {
+                document.querySelector('cart-items').classList.add('new-class');
+                document.querySelector('cart-items').classList.remove('is-empty');
+                document.querySelector('#main-cart-footer').classList.remove('is-empty');
+        }
+        else {
+             document.getElementById('sf_promo-416038').style.display = "none";
+        }
+
+         const addOnCheckBox = document.getElementById('addOnCooler');
+              if(addOnCheckBox.checked) {
+                  console.log("Checkboxchecked");
+              }
+
+
+
+
+       document.addEventListener("DOMContentLoaded", function() {
+            const priceElement = document.querySelector('.sf_promo-product-discounted-price .money');
+
+            // Extract the price text
+            const priceText = priceElement.textContent.trim();
+
+            // Extract the numeric value from the price text
+            const priceValue = parseFloat(priceText.replace(/[^0-9.]/g, ''));
+            const coolerBagInfos = JSON.parse(sessionStorage.getItem("coolerBagInfo")) || [];
+
+            document.getElementById("addPromoBtn").addEventListener("click", function(event) {
+                 let qty = document.getElementById('cooler_bag_qty').value;
+                    // Call your addToCart function (assuming it's defined elsewhere in your script)
+                 addToCartCoolerPromo(event,
+                    coolerBagInfos.menuPackage,
+                    coolerBagInfos.product,
+                    'cooler',
+                    qty,
+                    coolerBagInfos.packageName,
+                    coolerBagInfos.unitPrice.toFixed(2),
+                    coolerBagInfos.image,
+                    coolerBagInfos.uOM,
+                    coolerBagInfos.productCategory
+                );
+
+                // Find the tbody element where you want to add the cart item
+                const tbody = document.querySelector('.cart-items tbody');
+                if (tbody) {
+                    tbody.insertAdjacentHTML('beforeend', `
+                        <tr class="cart-item" id="CartItem-EA960CE347004E9483AB813CF540BCA8">
+                            <td class="cart-item__media">
+                                <a href="/SecretRecipe/Product/EA960CE347004E9483AB813CF540BCA8" onclick="sessionStorage.setItem('menuPackage','EA960CE347004E9483AB813CF540BCA8')">
+                                       <img class="cart-item__image" src="https://cdn.store-assets.com/s/896/i/75668520.jpeg" alt="Cake Cooler Bag (Up to 1R Size)" loading="lazy" width="100" height="100">
+                                </a>
+                            </td>
+                            <td class="cart-item__details">
+                                <a href="/SecretRecipe/Product/EA960CE347004E9483AB813CF540BCA8" class="cart-item__name break" onclick="sessionStorage.setItem('menuPackage','EA960CE347004E9483AB813CF540BCA8')">Cake Cooler Bag (Up to 1R Size)</a>
+                                <dl>
+                                    <div class="product-option"></div>
+                                </dl>
+                                <ul class="discounts list-unstyled" role="list" aria-label="Discount"></ul>
+                            </td>
+                            <td class="cart-item__totals right medium-hide large-up-hide">
+                                <div class="cart-item__price-wrapper">
+                                    <span class="price price--end">SGD$ ${priceValue.toFixed(2)}</span>
+                                </div>
+                            </td>
+                            <td class="cart-item__quantity">
+                                <label class="visually-hidden" for="Quantity-EA960CE347004E9483AB813CF540BCA8">Quantity</label>
+                                <input type="hidden" name="ids[]" value="EA960CE347004E9483AB813CF540BCA8">
+                                <input type="hidden" name="item_ids[]" value="EA960CE347004E9483AB813CF540BCA8">
+                                <quantity-input class="quantity">
+                                    <button class="quantity__button no-js-hidden" name="minus" type="button" data-item-id="EA960CE347004E9483AB813CF540BCA8">
+                                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" fill="none" viewBox="0 0 10 2">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M.5 1C.5.7.7.5 1 .5h8a.5.5 0 110 1H1A.5.5 0 01.5 1z" fill="currentColor"></path>
+                                        </svg>
+                                    </button>
+                                    <input class="quantity__input" type="number" name="updates[]" value="${qty}" min="0" aria-label="Quantity for Cake Cooler Bag (Up to 1R Size)" id="Quantity-EA960CE347004E9483AB813CF540BCA8" data-item-id="EA960CE347004E9483AB813CF540BCA8">
+                                    <button class="quantity__button no-js-hidden" name="plus" type="button" data-item-id="EA960CE347004E9483AB813CF540BCA8">
+                                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" fill="none" viewBox="0 0 10 10">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1 4.51a.5.5 0 000 1h3.5l.01 3.5a.5.5 0 001-.01V5.5l3.5-.01a.5.5 0 00-.01-1H5.5L5.49.99a.5.5 0 00-1 .01v3.5l-3.5.01H1z" fill="currentColor"></path>
+                                        </svg>
+                                    </button>
+                                </quantity-input>
+                                <cart-remove-button id="Remove-EA960CE347004E9483AB813CF540BCA8" data-index="undefined">
+                                    <a class="button button--tertiary" data-variant-id="49877742" data-quantity="1" data-item_id="EA960CE347004E9483AB813CF540BCA8" onclick="deleteCart('EA960CE347004E9483AB813CF540BCA8')">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation" class="icon icon-remove">
+                                            <path d="M14 3h-3.53a3.07 3.07 0 00-.6-1.65C9.44.82 8.8.5 8 .5s-1.44.32-1.87.85A3.06 3.06 0 005.53 3H2a.5.5 0 000 1h1.25v10c0 .28.22.5.5.5h8.5a.5.5 0 00.5-.5V4H14a.5.5 0 000-1zM6.91 1.98c.23-.29.58-.48 1.09-.48s.85.19 1.09.48c.2.24.3.6.36 1.02h-2.9c.05-.42.17-.78.36-1.02zm4.84 11.52h-7.5V4h7.5v9.5z" fill="currentColor"></path>
+                                            <path d="M6.55 5.25a.5.5 0 00-.5.5v6a.5.5 0 001 0v-6a.5.5 0 00-.5-.5zM9.45 5.25a.5.5 0 00-.5.5v6a.5.5 0 001 0v-6a.5.5 0 00-.5-.5z" fill="currentColor"></path>
+                                        </svg>
+                                    </a>
+                                </cart-remove-button>
+                            </td>
+                            <td class="cart-item__totals right small-hide">
+                                <div class="cart-item__price-wrapper">
+                                    <span class="price price--end">SGD$ ${priceValue.toFixed(2)}</span>
+                                </div>
+                            </td>
+                        </tr>
+                    `);
+                }
+                renderCart();
+            });
+        });
+
+    </script>
+</body>
+</html>

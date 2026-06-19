@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/SecretRecipe.js" asp-append-version="true"></script>
+    <link rel="stylesheet" type="text/css" href="~/css/callback.css">
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <script>
+        // Function to handle the callback once the user is redirected back
+        function handleCallback() {
+            // Get the current URL (where the callback is expected to land)
+            const url = window.location.href;
+
+            // Create a URLSearchParams object to easily access query parameters
+            const urlParams = new URLSearchParams(window.location.search);
+
+            // Retrieve 'code' and 'state' from the query string
+            const code = urlParams.get('code');
+            const state = urlParams.get('state');
+
+            // Check if both code and state are available
+            if (code && state) {
+                console.log(`Code: ${code}`);
+                console.log(`State: ${state}`);
+                // GetToken(code);
+                callback(code);
+                // Example: Send 'code' and 'state' to your server to exchange for an access token
+                // You could make an API request to your server here to exchange the code
+            } else {
+                console.error('Missing code or state parameters in the callback URL');
+            }
+
+            // Hide the loader once processing is done
+        }
+
+        // Ensure callback runs when the page is loaded at the callback URL
+        window.onload = function() {
+            // Hide loader after a brief delay to simulate processing time
+            setTimeout(handleCallback, 500); // Adjust timeout as necessary
+        };
+    </script>
+</body>
+</html>

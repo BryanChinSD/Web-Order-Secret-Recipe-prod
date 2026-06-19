@@ -1,0 +1,401 @@
+﻿@model Web_SecretRecipe.Controllers.PaymentSuccessViewModel
+
+@{
+    ViewData["Title"] = "Payment Status";
+
+    var status = Model?.Status?.ToLower() ?? "";
+    var isSuccess = (status.Contains("success") || status.Contains("approval") || status.Contains("approved") || status.Contains("successful"))
+                    && Model?.AmountPaid > 0;
+    var isPending = status.Contains("pending") || status.Contains("processing") || status.Contains("in progress");
+
+    var titleText = isSuccess ? "Payment Successful!"
+                  : isPending ? "Payment Pending..."
+                  : "Payment Failed";
+
+    var messageText = isSuccess
+        ? "Thank you for your order! Your payment has been processed successfully."
+        : isPending
+            ? "Your payment is still being processed. Please wait a moment or refresh the page later."
+            : "We couldn't process your payment. Please try again or use a different payment method.";
+
+    var icon = isSuccess ? "✓" : isPending ? "⏳" : "✖";
+
+    var buttonText = isSuccess ? "Continue Shopping"
+                  : isPending ? "Refresh Status"
+                  : "Try Again";
+
+    var buttonLink = isSuccess ? "/SecretRecipe"
+               : isPending ? $"/SR/Payment?isSuccess=true&merchantTxnRef={Model.OrderReference}"
+               : "/SecretRecipe/Checkout";
+
+    var secondaryButtonText = "Contact Support";
+    var secondaryButtonLink = "/Contact";
+}
+
+@if (Model == null)
+{
+        <p style="color:red;">Model is null</p>
+    return;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - Secret Recipe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="~/img/SR_LOGO.png" sizes="106x104" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/SecretRecipe.js" asp-append-version="true"></script>
+    <script src="~/js/Checkout.js" asp-append-version="true"></script>
+
+    <style>
+        /* ---- RESET ---- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* ---- DECORATIONS ---- */
+        .bg-decoration {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+        .bg-decoration:nth-child(1) { width: 200px; height: 200px; background: white; top: 10%; left: 10%; animation-delay: 0s; }
+        .bg-decoration:nth-child(2) { width: 150px; height: 150px; background: white; top: 70%; right: 10%; animation-delay: 2s; }
+        .bg-decoration:nth-child(3) { width: 100px; height: 100px; background: white; top: 30%; right: 20%; animation-delay: 4s; }
+
+        @@keyframes float { 0%,100%{transform:translateY(0) rotate(0)} 50%{transform:translateY(-20px) rotate(10deg)} }
+
+        /* ---- CARD ---- */
+        .payment-card {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
+            animation: slideUp 0.6s ease-out;
+        }
+        @@keyframes slideUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+
+        /* ---- ICON ---- */
+        .icon-circle {
+            width: 120px; height: 120px; margin: 0 auto 30px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 60px; color: white; position: relative;
+            animation: bounce 0.8s ease-out 0.3s both;
+        }
+        @@keyframes bounce { 0%{transform:scale(0)} 50%{transform:scale(1.1)} 100%{transform:scale(1)} }
+        .icon-circle::before { content: ''; position: absolute; width: 100%; height: 100%; border-radius: 50%; animation: pulse 2s infinite; }
+
+        .success-icon { background: linear-gradient(135deg,#4ade80,#22c55e); }
+        .success-icon::before { background: rgba(34,197,94,0.3); }
+        .pending-icon { background: linear-gradient(135deg,#fbbf24,#f59e0b); }
+        .pending-icon::before { background: rgba(245,158,11,0.3); }
+        .error-icon { background: linear-gradient(135deg,#ef4444,#dc2626); }
+        .error-icon::before { background: rgba(220,38,38,0.3); }
+
+        @@keyframes pulse { 0%{transform:scale(1);opacity:1} 100%{transform:scale(1.3);opacity:0} }
+
+        /* ---- TEXT ---- */
+        .payment-card h1 { font-size: 32px; font-weight: 700; margin-bottom: 16px; color: #1f2937; }
+        .status-message { font-size: 18px; color: #6b7280; margin-bottom: 40px; line-height: 1.6; }
+
+        /* ---- SUMMARY ---- */
+        .payment-summary { background:#f9fafb; border-radius:16px; padding:24px; margin-bottom:32px; text-align:left; border:1px solid #e5e7eb; }
+        .payment-summary h2 { font-size:20px; font-weight:600; color:#1f2937; margin-bottom:20px; text-align:center; }
+        .summary-list { list-style:none; }
+        .summary-list li { display:flex; justify-content:space-between; align-items:center; padding:12px 0; border-bottom:1px solid #e5e7eb; }
+        .summary-list li:last-child { border-bottom:none; font-weight:600; color:#1f2937; }
+        .summary-list strong { color:#6b7280; font-weight:500; }
+        .summary-list span { color:#1f2937; font-weight:600; }
+        .summary-list span[style*="font-weight:600"] {
+            background: linear-gradient(135deg,#4ade80,#22c55e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size:20px;
+        }
+        .summary-list li:has(span:empty) { display:none; }
+
+        /* ---- BUTTONS ---- */
+        .button-group { display:flex; gap:16px; margin-bottom:24px; }
+        .btn {
+            flex:1; padding:16px 24px; border-radius:12px;
+            font-weight:600; font-size:16px; text-align:center;
+            text-decoration:none; border:none; cursor:pointer;
+            position:relative; overflow:hidden; display:inline-block;
+            transition:all 0.3s ease;
+        }
+        .btn::before {
+            content:''; position:absolute; top:0; left:-100%; width:100%; height:100%;
+            background:linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent);
+            transition:left 0.5s;
+        }
+        .btn:hover::before { left:100%; }
+        .btn-primary { background:linear-gradient(135deg,#4f46e5,#7c3aed); color:white; }
+        .btn-warning { background:linear-gradient(135deg,#f59e0b,#d97706); color:white; }
+        .btn-error { background:linear-gradient(135deg,#ef4444,#dc2626); color:white; }
+        .btn-secondary { background:white; color:#4b5563; border:2px solid #e5e7eb; }
+
+        /* Hover lifts */
+        .btn-primary:hover, .btn-warning:hover, .btn-error:hover, .btn-secondary:hover { transform:translateY(-2px); }
+
+        /* ---- FOOTER ---- */
+        .receipt-email { font-size:14px; color:#6b7280; margin-bottom:24px; line-height:1.5; }
+        .powered-by { display:flex; align-items:center; justify-content:center; gap:8px; border-top:1px solid #e5e7eb; font-size:12px; color:#9ca3af; }
+        .powered-by-logo { height:69px; }
+
+        /* ---- RESPONSIVE ---- */
+        @@media (max-width:640px) {
+            .payment-card { padding:32px 24px; margin:10px; }
+            .icon-circle { width:100px; height:100px; font-size:50px; }
+            .payment-card h1 { font-size:28px; }
+            .button-group { flex-direction:column; }
+            .summary-list li { flex-direction:column; align-items:flex-start; gap:4px; }
+        }
+
+        /* ---- PENDING LOADER ---- */
+        .pending-icon .loading-spinner {
+            width:24px; height:24px; border:3px solid rgba(255,255,255,0.3);
+            border-top:3px solid white; border-radius:50%;
+            animation: spin 1s linear infinite;
+            position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+        }
+        @@keyframes spin { 0%{transform:translate(-50%,-50%) rotate(0)} 100%{transform:translate(-50%,-50%) rotate(360deg)} }
+    </style>
+</head>
+<body data-page="payment">
+
+    <!-- Background -->
+    <div class="bg-decoration"></div>
+    <div class="bg-decoration"></div>
+    <div class="bg-decoration"></div>
+
+    @if (isSuccess)
+    {
+        <script>
+            localStorage.clear();
+            sessionStorage.clear();
+        </script>
+    }
+    else
+    {
+        <script>
+            // If not success → always N
+            sessionStorage.setItem("paymentStatus", "N");
+        </script>
+    }
+
+    <div class="payment-card @(isSuccess ? "payment-success" : isPending ? "payment-pending" : "payment-failed")">
+        <div class="icon-circle @(isSuccess ? "success-icon" : isPending ? "pending-icon" : "error-icon")">
+            @Html.Raw(icon)
+            @if (isPending)
+            {
+                <div class="loading-spinner"></div>
+            }
+        </div>
+
+        <h1>@titleText</h1>
+        <p class="status-message">@messageText</p>
+
+        <!-- Summary -->
+        <div class="payment-summary">
+            <h2>Order Details</h2>
+            <ul class="summary-list">
+                <li>
+                    <strong>Order Number:</strong>
+                    <span id="order-number">
+                        @if (string.IsNullOrEmpty(Model.DocNo))
+                        {
+                            <text>Generating...</text>
+                            <script>
+                                (function () {
+                                    const txnRef   = '@Model.OrderReference';
+                                    const span     = document.getElementById('order-number');
+                                    const maxTries = 20;
+                                    let   tries    = 0;
+                                    function poll() {
+                                        if (tries >= maxTries) {
+                                            span.textContent = 'Please check your email for order confirmation.';
+                                            return;
+                                        }
+                                        tries++;
+                                        fetch(`/SR/GetOrderDocNo?merchantTxnRef=${encodeURIComponent(txnRef)}`)
+                                            .then(r => r.json())
+                                            .then(data => {
+                                                if (data.ready && data.docNo) {
+                                                    span.textContent = data.docNo;
+                                                } else {
+                                                    setTimeout(poll, 2000);
+                                                }
+                                            })
+                                            .catch(() => setTimeout(poll, 2000));
+                                    }
+                                    setTimeout(poll, 2000);
+                                })();
+                            </script>
+                        }
+                        else
+                        {
+                            @Model.DocNo
+                        }
+                    </span>
+                </li>
+                @if (!string.IsNullOrEmpty(Model.TransactionReference))
+                {
+                    <li><strong>Transaction ID:</strong><span>@Model.TransactionReference</span></li>
+                }
+                @if (!string.IsNullOrEmpty(Model.OrderReference))
+                {
+                    <li><strong>Reference Number:</strong><span>@Model.OrderReference</span></li>
+                }
+                @if (!string.IsNullOrEmpty(Model.DateTime))
+                {
+                    <li><strong>Date & Time:</strong><span>@Model.DateTime</span></li>
+                }
+                @if (!string.IsNullOrEmpty(Model.PaymentMode))
+                {
+                    <li><strong>Payment Method:</strong><span>@Model.PaymentMode</span></li>
+                }
+                @if (!string.IsNullOrEmpty(Model.BankReference))
+                {
+                    <li><strong>Bank Reference:</strong><span>@Model.BankReference</span></li>
+                }
+                @if (Model.AmountPaid > 0)
+                {
+                        <li><strong>Amount Paid:</strong><span style="font-weight:600">SGD @(Model.AmountPaid?.ToString("N2") ?? "0.00")</span></li>
+                }
+            </ul>
+        </div>
+
+        <!-- Actions -->
+        <div class="button-group">
+            <a href="@buttonLink" class="btn @(isSuccess ? "btn-primary" : isPending ? "btn-warning" : "btn-error")">@buttonText</a>
+            @* <a href="@secondaryButtonLink" class="btn btn-secondary">@secondaryButtonText</a> *@
+        </div>
+
+        <p class="receipt-email">
+            @if (isSuccess)
+            {
+                <text>A receipt has been sent to your email address.</text>
+                <script>
+                 
+                </script>
+            }
+            else if (isPending)
+            {
+                <text>We're still confirming your payment. Please check back shortly.</text>
+            }
+            else
+            {
+                <text>If you continue to experience issues, please contact our support team.</text>
+            }
+        </p>
+
+        <div class="powered-by">
+            <span>Powered by Solution Details Pte Ltd</span>
+            <img src="/img/solution-details.png" alt="Solution Details Pte Ltd" class="powered-by-logo" />
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // const docSpan = document.getElementById("docNoDisplay");
+            // if (!docSpan?.textContent.trim()) docSpan.parentElement.style.display = "none";
+
+            // Ripple effect
+            document.querySelectorAll('.btn').forEach(btn => {
+                btn.addEventListener('click', e => {
+                    const ripple = document.createElement('div');
+                    const rect = btn.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    ripple.style.cssText = `
+                        position:absolute;width:${size}px;height:${size}px;
+                        left:${e.clientX-rect.left-size/2}px;top:${e.clientY-rect.top-size/2}px;
+                        background:rgba(255,255,255,0.6);border-radius:50%;
+                        transform:scale(0);animation:ripple 600ms linear;pointer-events:none;`;
+                    btn.appendChild(ripple);
+                    setTimeout(()=>ripple.remove(),600);
+                });
+            });
+
+            const style = document.createElement('style');
+            style.textContent = `@@keyframes ripple {to {transform:scale(4);opacity:0;}}`;
+            document.head.appendChild(style);
+        });
+
+        (function () {
+            // Create <style> tag with responsive CSS
+            const style = document.createElement('style');
+            style.textContent = `
+                .whatsapp-button {
+                  position: fixed;
+                  bottom: 20px;
+                  right: 20px;
+                  width: 60px;
+                  height: 60px;
+                  background-color: #25d366;
+                  border-radius: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                  cursor: pointer;
+                  z-index: 9999;
+                  transition: background-color 0.3s ease;
+                }
+                .whatsapp-button img {
+                  width: 30px;
+                  height: 30px;
+                }
+                .whatsapp-button:hover {
+                  background-color: #1ebd5a;
+                }
+              `;
+            document.head.appendChild(style);
+
+            // Create WhatsApp button
+            const waButton = document.createElement('div');
+            waButton.className = 'whatsapp-button';
+
+            // Create icon image
+            const waImg = document.createElement('img');
+            waImg.src = 'https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg';
+            waImg.alt = 'WhatsApp Logo';
+
+            // Append image to button
+            waButton.appendChild(waImg);
+
+            // Open WhatsApp on click (replace number)
+            waButton.onclick = function () {
+                const message = encodeURIComponent("Hi there! I'd like to know more about your cake ordering options.");
+                window.open(`https://wa.me/6591063726?text=${message}`, '_blank');
+            };
+
+
+            // Add to body
+            document.body.appendChild(waButton);
+        })();
+    </script>
+
+</body>
+</html>
+
+

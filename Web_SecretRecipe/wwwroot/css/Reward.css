@@ -1,0 +1,169 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #fff5f0, #ffe8e8);
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Headers and Labels */
+.header {
+    font-size: 2.5rem;
+    font-weight: bold;
+/*    margin-bottom: 20px;
+*/}
+
+.section-heading {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 16px 0 8px;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.card-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #d62828, #e63946);
+    padding: 12px 16px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #d62828;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+    a:hover {
+        color: #a61c1c;
+    }
+
+/* Card Layouts */
+.card, .qr-card {
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card {
+    background: #fff;
+    padding: 24px;
+    margin-bottom: 24px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+/* Flexbox Layout for Cards */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.half {
+    flex: 1 1 48%;
+}
+
+/* Reward Points */
+.reward-points {
+    font-size: 1.5rem;
+    color: #d62828;
+    font-weight: bold;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    background: #eee;
+    border-radius: 20px;
+    height: 12px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #ED1C23;
+    width: 97%;
+    border-radius: 20px;
+    transition: width 0.4s ease;
+    display : block;
+}
+
+/* QR Card */
+.qr-card {
+    text-align: center;
+        background: #d62828;
+ color: white;
+    padding: 24px 16px;
+    font-size: 1rem;
+    background: radial-gradient( circle, #EF4136 0%, #EC3F35 20%, #E43C33 40%, #D6352F 60%, #C22D29 75%, #A82122 90%, #A31F21 100% );
+}
+
+    .qr-card img {
+        width: 130px;
+        border-radius: 12px;
+        margin: 12px 0;
+    }
+
+
+
+
+/* Buttons */
+.btn {
+    background: #d62828;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+    .btn:hover {
+        background: #b91c1c;
+    }
+
+/* Invite Card */
+.invite-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 16px;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+}
+
+.invite-text {
+    flex: 1;
+    font-size: 1rem;
+}
+
+.invite-icon {
+    font-size: 2rem;
+    color: #d62828;
+}
+a:empty, ul:empty, dl:empty, div:empty, section:empty, article:empty, p:empty, h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty {
+    display: block;
+}
+        
+
+

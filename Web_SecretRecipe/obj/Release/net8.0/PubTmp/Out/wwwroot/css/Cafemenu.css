@@ -1,0 +1,148 @@
+﻿/* Grid Layout for the body content */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+    /* Card Styling */
+    .grid .rounded-xl {
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .grid .rounded-xl:hover {
+            transform: translateY(-8px);
+        }
+
+        /* Image Styling inside cards */
+        .grid .rounded-xl .h-48 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-bottom: 2px solid #f2f2f2;
+        }
+
+        /* Content inside the card */
+        .grid .rounded-xl .p-4 {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+            /* Card Title Styling */
+            .grid .rounded-xl .p-4 h2 {
+                font-size: 16px;
+                font-weight: bold;
+                color: #333;
+/*                margin-bottom: 8px;
+*/                font-family: 'Segoe UI', Roboto, sans-serif;
+            }
+
+            /* Card Price Styling */
+            .grid .rounded-xl .p-4 p {
+                font-size: 0.875rem;
+                color: #666;
+                font-weight: 600;
+                text-align: right;
+            }
+
+            /* Price Highlighting */
+            .grid .rounded-xl .p-4 .text-right {
+                font-size: 14px;
+                font-weight: bold;
+                color: #e63946;
+                margin-top: 10px;
+            }
+
+            /* Emoji Styling for Special Items */
+            .grid .rounded-xl .p-4 h2 span {
+                font-size: 1.25rem;
+                margin-left: 6px;
+            }
+
+/* Media Queries for Responsiveness */
+
+/* Tablet and up (larger screens) */
+/*@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));*/ /* Adjust grid layout for tablets */
+    /*}
+
+        .grid .rounded-xl .p-4 {
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+}*/
+
+/* Mobile view (2 items per row)*/ 
+@media screen and (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);  2 items per row for mobile 
+    }
+
+    .grid .rounded-xl .p-4 h2 {
+        font-size: 15px;
+    }
+
+    .grid .rounded-xl .p-4 p {
+        font-size: 12px;
+    }
+
+    .rte {
+        background-color: rgba(248, 248, 248, 0.6);
+        padding: 0px;
+        border-radius: 20px;
+    }
+
+    .text-sm font-semibold {
+        font-family : cursive;
+    }
+
+}
+
+/* Ensure images are fully responsive */
+.fr-view img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;  Adjust height to auto for better image scaling 
+}
+
+.grid grid-cols-2 lg .grid-cols-4 gap-6 p-4 bg-white {
+    border-radius : 15px;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+
+    .card-content {
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-price {
+        font-size: 12px;
+    }
+}
